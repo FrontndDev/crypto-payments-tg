@@ -1,0 +1,305 @@
+$white: #FFFFFF;
+$dark: #0D0D12;
+$dark-gray: #232328;
+$general: #41A4DF;
+$blue-12: rgba(41, 126, 226, .12);
+$blue-linear: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+$deep-blue: #297EE2;
+$blue-rgba: rgba(54, 136, 194, 0.82);
+$purple: #8198D1;
+$bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
+$bg-pink-linear: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+
+//variables
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #FFFFFF;
+  color: $dark;
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $dark;
+  text-decoration: none;
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+//////////
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 629;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: -2.4px;
+
+  & > span {
+    color: $general;
+  }
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 629;
+  line-height: 61.6px;
+  letter-spacing: -1.68px;
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 629;
+  line-height: 46.2px;
+  letter-spacing: -1.26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 629;
+  line-height: 35.2px;
+  letter-spacing: -0.96px;
+}
+
+p {
+  color: $dark;
+
+  &:not(.description) {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &.description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-transform: uppercase;
+  }
+}
+
+button {
+  padding: 18px 42px;
+  width: fit-content;
+  border-radius: 900px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $white;
+
+  &.bg-blue {
+    background: $blue-12;
+    color: $deep-blue;
+  }
+
+  &.bg-deep-blue {
+    color: #FFFFFF;
+    background: $general;
+  }
+}
+
+////////////////////HEADER//////////////////
+
+.header {
+  padding-top: 40px;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.logo {
+  width: 64px;
+}
+
+////////////////////CRYPTO-PAYMENTS////////////////////
+
+.crypto-payments {
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    margin-bottom: 95px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__phone {
+    flex-shrink: 0;
+    max-width: 488px;
+  }
+}
+
+.bots {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__icons {
+    display: flex;
+
+    & > img {
+      margin-right: -32px;
+      width: 96px;
+    }
+  }
+}
+
+////////////////////////AUTO-SALES//////////////////////////////
+
+.auto-sales {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: $dark-gray;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 42px 0 41px;
+    width: 488px;
+    height: 488px;
+    border-radius: 40px;
+    background: $bg-pink-linear;
+
+    &.messages {
+      gap: 5px;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 6px;
+    padding: 10px 17px;
+    border-radius: 17.8px;
+    width: calc(100% - 6px);
+    background: $white;
+
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20.25px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: -0.6px;
+    position: relative;
+
+    &:last-child {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 25px;
+        height: 30px;
+        background-image: url("/assets/images/auto-sales/tail.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: -6.64px;
+      }
+    }
+
+    & > p {
+      text-align: left;
+      position: relative;
+
+      & > img {
+        display: inline;
+        width: 20.25px;
+        height: 20.25px;
+      }
+    }
+
+    &-time {
+      display: inline;
+      margin-top: -47px;
+      opacity: .4;
+      font-size: 15.5px;
+      font-weight: 510;
+      line-height: 21.4px;
+      letter-spacing: -0.6px;
+      text-align: right;
+    }
+  }
+}

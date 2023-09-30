@@ -1,0 +1,258 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #FFFFFF;
+  color: #0D0D12;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D0D12;
+  text-decoration: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 629;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: -2.4px;
+}
+h1 > span {
+  color: #41A4DF;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 629;
+  line-height: 61.6px;
+  letter-spacing: -1.68px;
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 629;
+  line-height: 46.2px;
+  letter-spacing: -1.26px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 629;
+  line-height: 35.2px;
+  letter-spacing: -0.96px;
+}
+
+p {
+  color: #0D0D12;
+}
+p:not(.description) {
+  font-weight: 400;
+  font-size: 20px;
+}
+p.description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 18px 42px;
+  width: fit-content;
+  border-radius: 900px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+button.bg-blue {
+  background: rgba(41, 126, 226, 0.12);
+  color: #297EE2;
+}
+button.bg-deep-blue {
+  color: #FFFFFF;
+  background: #41A4DF;
+}
+
+.header {
+  padding-top: 40px;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  width: 64px;
+}
+
+.crypto-payments__body {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.crypto-payments__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+  margin-bottom: 95px;
+}
+.crypto-payments__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.crypto-payments__phone {
+  flex-shrink: 0;
+  max-width: 488px;
+}
+
+.bots {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.bots__icons {
+  display: flex;
+}
+.bots__icons > img {
+  margin-right: -32px;
+  width: 96px;
+}
+
+.auto-sales {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #232328;
+}
+.auto-sales__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 42px 0 41px;
+  width: 488px;
+  height: 488px;
+  border-radius: 40px;
+  background: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+}
+.auto-sales__block.messages {
+  gap: 5px;
+}
+.auto-sales__message {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 6px;
+  padding: 10px 17px;
+  border-radius: 17.8px;
+  width: calc(100% - 6px);
+  background: #FFFFFF;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20.25px;
+  font-weight: 400;
+  line-height: 23.8px;
+  letter-spacing: -0.6px;
+  position: relative;
+}
+.auto-sales__message:last-child {
+  position: relative;
+}
+.auto-sales__message:last-child:before {
+  content: "";
+  width: 25px;
+  height: 30px;
+  background-image: url("/assets/images/auto-sales/tail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: -6.64px;
+}
+.auto-sales__message > p {
+  text-align: left;
+  position: relative;
+}
+.auto-sales__message > p > img {
+  display: inline;
+  width: 20.25px;
+  height: 20.25px;
+}
+.auto-sales__message-time {
+  display: inline;
+  margin-top: -47px;
+  opacity: 0.4;
+  font-size: 15.5px;
+  font-weight: 510;
+  line-height: 21.4px;
+  letter-spacing: -0.6px;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

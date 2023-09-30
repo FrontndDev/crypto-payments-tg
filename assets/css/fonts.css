@@ -1,0 +1,43 @@
+/********Inter********/
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Medium.ttf') format('ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+/********SF Pro Display********/
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFPro/SFProDisplay-Regular.woff2') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFPro/SFProDisplay-Medium.woff2') format('ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('ttf');
+    font-weight: 700;
+}
