@@ -1,11 +1,14 @@
 $white: #FFFFFF;
+$bg-light: #F7F9FB;
 $dark: #0D0D12;
+$dark-40: rgba(17, 17, 17, .40);
+$gray: rgba(255, 255, 255, .24);
 $dark-gray: #232328;
 $general: #41A4DF;
 $blue-12: rgba(41, 126, 226, .12);
-$blue-linear: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+$blue-linear: linear-gradient(240deg, rgba(41, 126, 226, .12) 3.57%, rgba(24, 97, 182, .12) 86.24%);
 $deep-blue: #297EE2;
-$blue-rgba: rgba(54, 136, 194, 0.82);
+$blue-rgba: rgba(54, 136, 194, .82);
 $purple: #8198D1;
 $bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
 $bg-pink-linear: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
@@ -26,7 +29,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  background: #FFFFFF;
+  background: $white;
   color: $dark;
 }
 
@@ -105,6 +108,11 @@ h2 {
   font-weight: 629;
   line-height: 61.6px;
   letter-spacing: -1.68px;
+  color: $general;
+
+  & > span {
+    color: $white;
+  }
 }
 
 h3 {
@@ -182,6 +190,8 @@ button {
 ////////////////////CRYPTO-PAYMENTS////////////////////
 
 .crypto-payments {
+  margin-top: 20px;
+
   &__body {
     display: flex;
     align-items: center;
@@ -225,17 +235,24 @@ button {
 ////////////////////////AUTO-SALES//////////////////////////////
 
 .auto-sales {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+  margin-top: 97px;
   background: $dark-gray;
+  width: 100%;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 83px;
+    min-height: 100vh;
+  }
 
   &__block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     padding: 0 42px 0 41px;
     width: 488px;
     height: 488px;
@@ -300,6 +317,92 @@ button {
       line-height: 21.4px;
       letter-spacing: -0.6px;
       text-align: right;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 39px;
+  }
+
+  &__description {
+    color: $white;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    &-num {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      color: $white;
+    }
+
+    &-button {
+      width: 4px;
+      height: 108px;
+      border-radius: 90px;
+      background: $gray;
+
+      &:not(.active) {
+        cursor: pointer;
+      }
+
+      &.active {
+        background: $general;
+      }
+    }
+  }
+}
+
+/////////////////////CRYPTOCURRENCIES/////////////////////
+
+.cryptocurrencies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 144px;
+  padding: 42px 56px;
+  border-radius: 40px;
+  background: $bg-light;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_mt-22 {
+      margin-top: 22px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -9px -8px;
+      width: 113px;
+      height: 112px;
+    }
+
+    &-name {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      text-transform: uppercase;
+      color: $dark-40;
     }
   }
 }
