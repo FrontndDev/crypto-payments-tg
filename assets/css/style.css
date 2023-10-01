@@ -136,6 +136,20 @@ button.bg-deep-blue {
   color: #FFFFFF;
   background: #41A4DF;
 }
+button.telegram-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 9px;
+  width: 100%;
+  border-radius: 7.831px;
+  background: rgba(54, 136, 194, 0.82);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 19px;
+  font-weight: 510;
+  line-height: 17.9px;
+  color: #FFFFFF;
+}
 
 .header {
   padding-top: 40px;
@@ -224,55 +238,6 @@ button.bg-deep-blue {
 .auto-sales__block.messages {
   gap: 5px;
 }
-.auto-sales__message {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-left: 6px;
-  padding: 10px 17px;
-  border-radius: 17.8px;
-  width: calc(100% - 6px);
-  background: #FFFFFF;
-  font-family: "SF Pro Display", sans-serif;
-  font-size: 20.25px;
-  font-weight: 400;
-  line-height: 23.8px;
-  letter-spacing: -0.6px;
-  position: relative;
-}
-.auto-sales__message:last-child {
-  position: relative;
-}
-.auto-sales__message:last-child:before {
-  content: "";
-  width: 25px;
-  height: 30px;
-  background-image: url("/assets/images/auto-sales/tail.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: -6.64px;
-}
-.auto-sales__message > p {
-  text-align: left;
-  position: relative;
-}
-.auto-sales__message > p > img {
-  display: inline;
-  width: 20.25px;
-  height: 20.25px;
-}
-.auto-sales__message-time {
-  display: inline;
-  margin-top: -47px;
-  opacity: 0.4;
-  font-size: 15.5px;
-  font-weight: 510;
-  line-height: 21.4px;
-  letter-spacing: -0.6px;
-  text-align: right;
-}
 .auto-sales__info {
   display: flex;
   flex-direction: column;
@@ -307,6 +272,79 @@ button.bg-deep-blue {
   background: #41A4DF;
 }
 
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px 17px;
+  border-radius: 17.8px;
+  width: calc(100% - 6px);
+  background: #FFFFFF;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20.25px;
+  font-weight: 400;
+  line-height: 23.8px;
+  letter-spacing: -0.6px;
+  position: relative;
+}
+.message.ml-6 {
+  margin-left: 6px;
+}
+.message:last-child:not(.not-last) {
+  position: relative;
+}
+.message:last-child:not(.not-last):before {
+  content: "";
+  width: 25px;
+  height: 30px;
+  background-image: url("/assets/images/auto-sales/tail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: -6.64px;
+}
+.message > p {
+  text-align: left;
+  position: relative;
+}
+.message > p > img {
+  display: inline;
+  width: 20.25px;
+  height: 20.25px;
+}
+.message__time {
+  display: inline;
+  margin-top: -47px;
+  font-size: 15.5px;
+  font-weight: 510;
+  line-height: 21.4px;
+  letter-spacing: -0.6px;
+  text-align: right;
+  color: rgba(17, 17, 17, 0.4);
+}
+.message.little {
+  gap: 22px;
+  padding: 10px 15.6px;
+  border-radius: 16.78px 16.78px 7.8px 7.8px;
+}
+.message.little .message__time {
+  margin-top: -40px;
+  font-size: 14.5px;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+.message.little, .message.little p {
+  font-size: 19px;
+  letter-spacing: -0.56px;
+  line-height: 22.37px;
+  color: #000000;
+}
+.message.little strong, .message.little p strong {
+  font-weight: 590;
+  color: #0D0D12;
+}
+
 .info {
   margin-top: 144px;
 }
@@ -316,8 +354,16 @@ button.bg-deep-blue {
   grid-template-rows: 345px 366px 366px 510px;
   grid-gap: 20px;
 }
-.info__body > div {
+.info__item {
   background: #F7F9FB;
+}
+.info__item-down {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.info__item-down > p {
+  color: rgba(17, 17, 17, 0.8);
 }
 
 .cryptocurrencies {
@@ -369,6 +415,14 @@ button.bg-deep-blue {
 .start-crypto-bot__up {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.start-crypto-bot__up > svg {
+  position: absolute;
+  bottom: -25px;
+  right: -15px;
 }
 .start-crypto-bot__create-btn {
   display: flex;
@@ -395,9 +449,45 @@ button.bg-deep-blue {
 }
 
 .payment-statistics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
   padding: 42px 56px;
   border-radius: 32px;
   grid-area: 2/6/4/13;
+}
+.payment-statistics__up {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "tg-message tg-message" "tg-btn-all-time tg-btn-today" "tg-btn-yesterday tg-btn-week" "tg-btn-month tg-btn-month" "tg-btn-back tg-btn-back";
+  grid-gap: 4.5px 4.7px;
+  padding: 46px 74px;
+  height: 526px;
+  width: 100%;
+  border-radius: 24px;
+  background-image: url("/assets/images/cryptocurrencies/bg-blue.png");
+  background-size: cover;
+}
+.payment-statistics__up .message {
+  grid-area: tg-message;
+}
+.payment-statistics__up #tg-btn-all-time {
+  grid-area: tg-btn-all-time;
+}
+.payment-statistics__up #tg-btn-today {
+  grid-area: tg-btn-today;
+}
+.payment-statistics__up #tg-btn-yesterday {
+  grid-area: tg-btn-yesterday;
+}
+.payment-statistics__up #tg-btn-week {
+  grid-area: tg-btn-week;
+}
+.payment-statistics__up #tg-btn-month {
+  grid-area: tg-btn-month;
+}
+.payment-statistics__up #tg-btn-back {
+  grid-area: tg-btn-back;
 }
 
 .send-coins {

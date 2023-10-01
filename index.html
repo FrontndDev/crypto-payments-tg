@@ -16,9 +16,9 @@
                 <img src="/assets/images/logo.png" alt="logo" class="logo">
 
                 <nav class="header__nav">
-                    <a href="#">Use cases</a>
-                    <a href="#">Features</a>
-                    <a href="#">How to start</a>
+                    <a href="#" class="header__nav-link">Use cases</a>
+                    <a href="#" class="header__nav-link">Features</a>
+                    <a href="#" class="header__nav-link">How to start</a>
                 </nav>
 
                 <button class="bg-blue">Get started</button>
@@ -55,7 +55,7 @@
                 <div class="auto-sales__body">
                     <div class="auto-sales__content">
                         <div class="auto-sales__block messages">
-                            <div class="auto-sales__message">
+                            <div class="message ml-6">
                                 <p>
                                     <img src="/assets/images/auto-sales/money.png" alt="money">
                                     You sent 5,5 USDT ($5.50).
@@ -66,14 +66,14 @@
                                     1 month of Blazing Fast VPN
                                     <img src="/assets/images/auto-sales/flash.png" alt="flash">
                                 </p>
-                                <time class="auto-sales__message-time">21:25</time>
+                                <time class="message__time">21:25</time>
                             </div>
-                            <div class="auto-sales__message">
+                            <div class="message ml-6">
                                 <p>
                                     <img src="/assets/images/auto-sales/key.png" alt="key">
                                     Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8
                                 </p>
-                                <time class="auto-sales__message-time">21:25</time>
+                                <time class="message__time">21:25</time>
                             </div>
                         </div>
 
@@ -388,34 +388,90 @@
                         </div>
                     </div>
 
-<!--                    <div class="info__rows-2">-->
-                    <div class="start-crypto-bot">
+                    <div class="info__item start-crypto-bot">
                         <div class="start-crypto-bot__up">
                             <button class="start-crypto-bot__create-btn">
                                 <img src="/assets/images/cryptocurrencies/tree.png" alt="tree">
                                 Create App
                             </button>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47" fill="none">
+                                <path d="M11.1275 3.64677C6.7178 1.12449 1.36473 4.88154 2.23774 9.88607L7.45908 39.8172C8.51449 45.8673 16.9001 46.6127 19.006 40.8435L22.4947 31.2864C22.782 30.4994 23.5293 29.9749 24.3671 29.9723L34.541 29.9403C40.6824 29.921 42.8322 21.7813 37.5012 18.7321L11.1275 3.64677Z" fill="url(#paint0_linear_1_69)" stroke="#F1F5F9" stroke-width="4"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_69" x1="1.90306" y1="-33.3301" x2="-24.3108" y2="39.2676" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9FCCFA"/>
+                                        <stop offset="1" stop-color="#0974F1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
-                        <div class="start-crypto-bot__info">
+                        <div class="info__item-down">
                             <h3>One click to start</h3>
                             <p>Open <a href="#">@CryptoBot</a>, go to <a href="#">Crypto Pay</a> and tap Create App to get API Token</p>
                         </div>
                     </div>
-                    <div class="exchange-rates">
-                        <h3>Real-time <br> exchange rates</h3>
-                    </div>
-<!--                    </div>-->
-
-                    <div class="payment-statistics">
-                        <h3>Payment statistics</h3>
+                    <div class="info__item exchange-rates">
+                        <div class="info__item-down">
+                            <h3>Real-time <br> exchange rates</h3>
+                            <p>Request up to date currency rate with the <a href="#">getExchangeRates</a> API method</p>
+                        </div>
                     </div>
 
-                    <div class="send-coins">
-                        <h3>Send coins to users</h3>
+                    <div class="info__item payment-statistics">
+                        <div class="payment-statistics__up">
+                            <div class="message little not-last">
+                                <p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+                                <p>Volume: <strong>$6,530</strong></p>
+                                <p>
+                                    The number of created invoices: <strong>15,569</strong>
+                                    <br>
+                                    Number of payments: <strong>6,453</strong>
+                                    <br>
+                                    Number of users: <strong>5,606</strong>
+                                </p>
+                                <p>Conversion: <strong>41%</strong></p>
+                                <time class="message__time">21:25</time>
+                            </div>
+                            <button class="telegram-button" id="tg-btn-all-time">· All Time ·</button>
+                            <button class="telegram-button" id="tg-btn-today">Today</button>
+                            <button class="telegram-button" id="tg-btn-yesterday">Yesterday</button>
+                            <button class="telegram-button" id="tg-btn-week">Week</button>
+                            <button class="telegram-button" id="tg-btn-month">Month</button>
+                            <button class="telegram-button" id="tg-btn-back">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none">
+                                    <path d="M5.18324 1.63171L1.42725 5.38771L5.18324 9.1437" stroke="white" stroke-width="2.81699" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Back
+                            </button>
+                        </div>
+                        <div class="info__item-down">
+                            <h3>Payment statistics</h3>
+                            <p>
+                                Open <a href="#">@CryptoBot</a>, go to <a href="#">Crypto Pay</a> and <a href="#">My Apps</a>,
+                                <br>
+                                App Name to get Statistics
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="anonymous-payments">
-                        <h3>Anonymous payments</h3>
+                    <div class="info__item send-coins">
+                        <div class="info__item-down">
+                            <h3>Send coins to users</h3>
+                            <p>Automate payouts to users with <a href="#">transfer</a> API method</p>
+                        </div>
+                    </div>
+
+                    <div class="info__item anonymous-payments">
+                        <div class="info__item-down">
+                            <h3>Anonymous payments</h3>
+                            <p>
+                                Use allow_anonymous parameter
+                                <br>
+                                in <a href="#">createInvoice</a> method to give user
+                                <br>
+                                an option to remain private
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

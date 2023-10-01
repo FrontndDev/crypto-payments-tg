@@ -1,0 +1,9 @@
+Index: .gitignore
+===================================================================
+diff --git a/.gitignore b/.gitignore
+deleted file mode 100644
+--- a/.gitignore	(revision 8193f33320a510bbd134c40bf190494bc269b6e2)
++++ /dev/null	(revision 8193f33320a510bbd134c40bf190494bc269b6e2)
+@@ -1,1 +0,0 @@
+-.idea
+\ No newline at end of file

@@ -1,7 +1,9 @@
 $white: #FFFFFF;
 $bg-light: #F7F9FB;
+$black: #000000;
 $dark: #0D0D12;
 $dark-40: rgba(17, 17, 17, .40);
+$dark-80: rgba(17, 17, 17, .80);
 $gray: rgba(255, 255, 255, .24);
 $dark-gray: #232328;
 $general: #41A4DF;
@@ -164,6 +166,21 @@ button {
     color: #FFFFFF;
     background: $general;
   }
+
+  &.telegram-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9px;
+    width: 100%;
+    border-radius: 7.831px;
+    background: $blue-rgba;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 19px;
+    font-weight: 510;
+    line-height: 17.9px;
+    color: $white;
+  }
 }
 
 ////////////////////HEADER//////////////////
@@ -271,62 +288,6 @@ button {
     }
   }
 
-  &__message {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-left: 6px;
-    padding: 10px 17px;
-    border-radius: 17.8px;
-    width: calc(100% - 6px);
-    background: $white;
-
-    font-family: 'SF Pro Display', sans-serif;
-    font-size: 20.25px;
-    font-weight: 400;
-    line-height: 23.8px;
-    letter-spacing: -0.6px;
-    position: relative;
-
-    &:last-child {
-      position: relative;
-
-      &:before {
-        content: '';
-        width: 25px;
-        height: 30px;
-        background-image: url("/assets/images/auto-sales/tail.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        left: -6.64px;
-      }
-    }
-
-    & > p {
-      text-align: left;
-      position: relative;
-
-      & > img {
-        display: inline;
-        width: 20.25px;
-        height: 20.25px;
-      }
-    }
-
-    &-time {
-      display: inline;
-      margin-top: -47px;
-      opacity: .4;
-      font-size: 15.5px;
-      font-weight: 510;
-      line-height: 21.4px;
-      letter-spacing: -0.6px;
-      text-align: right;
-    }
-  }
-
   &__info {
     display: flex;
     flex-direction: column;
@@ -367,6 +328,97 @@ button {
     }
   }
 }
+
+///////////////////////MESSAGE//////////////////////////
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px 17px;
+  border-radius: 17.8px;
+  width: calc(100% - 6px);
+  background: $white;
+
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20.25px;
+  font-weight: 400;
+  line-height: 23.8px;
+  letter-spacing: -0.6px;
+  position: relative;
+
+  &.ml-6 {
+    margin-left: 6px;
+  }
+
+  &:last-child {
+    &:not(.not-last) {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 25px;
+        height: 30px;
+        background-image: url("/assets/images/auto-sales/tail.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: -6.64px;
+      }
+    }
+  }
+
+  & > p {
+    text-align: left;
+    position: relative;
+
+    & > img {
+      display: inline;
+      width: 20.25px;
+      height: 20.25px;
+    }
+  }
+
+  &__time {
+    display: inline;
+    margin-top: -47px;
+    font-size: 15.5px;
+    font-weight: 510;
+    line-height: 21.4px;
+    letter-spacing: -0.6px;
+    text-align: right;
+    color: $dark-40;
+  }
+
+  &.little {
+    gap: 22px;
+    padding: 10px 15.6px;
+    border-radius: 16.78px 16.78px 7.8px 7.8px;
+
+    & .message {
+      &__time {
+        margin-top: -40px;
+        font-size: 14.5px;
+        line-height: 20px;
+        letter-spacing: -0.56px;
+      }
+    }
+  }
+
+  &.little,
+  &.little p {
+    font-size: 19px;
+    letter-spacing: -0.56px;
+    line-height: 22.37px;
+    color: $black;
+
+    & strong {
+      font-weight: 590;
+      color: $dark;
+    }
+  }
+}
 ///////////////////////////INFO///////////////////////////
 
 .info {
@@ -377,9 +429,19 @@ button {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 345px 366px 366px 510px;
     grid-gap: 20px;
+  }
 
-    & > div {
-      background: $bg-light;
+  &__item {
+    background: $bg-light;
+
+    &-down {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      & > p {
+        color: $dark-80;
+      }
     }
   }
 }
@@ -440,6 +502,15 @@ button {
   &__up {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      bottom: -25px;
+      right: -15px;
+    }
   }
 
   &__create-btn {
@@ -469,9 +540,58 @@ button {
 }
 
 .payment-statistics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
   padding: 42px 56px;
   border-radius: 32px;
   grid-area: 2 / 6 / 4 / 13;
+
+  &__up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+            "tg-message tg-message"
+            "tg-btn-all-time tg-btn-today"
+            "tg-btn-yesterday tg-btn-week"
+            "tg-btn-month tg-btn-month"
+            "tg-btn-back tg-btn-back";
+    grid-gap: 4.5px 4.7px;
+    padding: 46px 74px;
+    height: 526px;
+    width: 100%;
+    border-radius: 24px;
+    background-image: url("/assets/images/cryptocurrencies/bg-blue.png");
+    background-size: cover;
+
+    & .message {
+      grid-area: tg-message;
+    }
+
+    & #tg-btn-all-time {
+      grid-area: tg-btn-all-time;
+    }
+
+    & #tg-btn-today {
+      grid-area: tg-btn-today;
+    }
+
+    & #tg-btn-yesterday {
+      grid-area: tg-btn-yesterday;
+    }
+
+    & #tg-btn-week {
+      grid-area: tg-btn-week;
+    }
+
+    & #tg-btn-month {
+      grid-area: tg-btn-month;
+    }
+
+    & #tg-btn-back {
+      grid-area: tg-btn-back;
+    }
+  }
 }
 
 .send-coins {
