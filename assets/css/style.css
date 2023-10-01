@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 a:not([class]) {
+  color: #41A4DF;
   text-decoration-skip-ink: auto;
 }
 
@@ -198,10 +199,15 @@ button.bg-deep-blue {
 }
 .auto-sales__body {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 83px;
   min-height: 100vh;
+}
+.auto-sales__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 122px;
 }
 .auto-sales__block {
   display: flex;
@@ -271,7 +277,7 @@ button.bg-deep-blue {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding-left: 39px;
+  max-width: 488px;
 }
 .auto-sales__description {
   color: #FFFFFF;
@@ -301,14 +307,26 @@ button.bg-deep-blue {
   background: #41A4DF;
 }
 
+.info {
+  margin-top: 144px;
+}
+.info__body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 345px 366px 366px 510px;
+  grid-gap: 20px;
+}
+.info__body > div {
+  background: #F7F9FB;
+}
+
 .cryptocurrencies {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  margin-top: 144px;
   padding: 42px 56px;
   border-radius: 40px;
-  background: #F7F9FB;
+  grid-area: 1/1/2/13;
 }
 .cryptocurrencies__list {
   display: flex;
@@ -338,6 +356,60 @@ button.bg-deep-blue {
   line-height: 16.8px;
   text-transform: uppercase;
   color: rgba(17, 17, 17, 0.4);
+}
+
+.start-crypto-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 79px 56px 42px;
+  border-radius: 40px;
+  grid-area: 2/1/3/6;
+}
+.start-crypto-bot__up {
+  display: flex;
+  justify-content: center;
+}
+.start-crypto-bot__create-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  padding: 18px 39px;
+  width: 223px;
+  border-radius: 17px;
+  background: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #0D0D12;
+}
+.start-crypto-bot__create-btn > img {
+  width: 21px;
+}
+
+.exchange-rates {
+  padding: 42px 56px;
+  border-radius: 32px;
+  grid-area: 3/1/4/6;
+}
+
+.payment-statistics {
+  padding: 42px 56px;
+  border-radius: 32px;
+  grid-area: 2/6/4/13;
+}
+
+.send-coins {
+  padding: 0 42px 42px;
+  border-radius: 40px;
+  grid-area: 4/1/5/8;
+}
+
+.anonymous-payments {
+  padding: 42px;
+  border-radius: 32px;
+  grid-area: 4/8/5/13;
 }
 
 /*# sourceMappingURL=style.css.map */

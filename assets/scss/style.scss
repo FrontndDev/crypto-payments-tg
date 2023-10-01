@@ -52,6 +52,7 @@ a {
   text-decoration: none;
 
   &:not([class]) {
+    color: $general;
     text-decoration-skip-ink: auto;
   }
 }
@@ -241,10 +242,16 @@ button {
 
   &__body {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 83px;
     min-height: 100vh;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 122px;
   }
 
   &__block {
@@ -324,7 +331,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding-left: 39px;
+    max-width: 488px;
   }
 
   &__description {
@@ -360,6 +367,22 @@ button {
     }
   }
 }
+///////////////////////////INFO///////////////////////////
+
+.info {
+  margin-top: 144px;
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 345px 366px 366px 510px;
+    grid-gap: 20px;
+
+    & > div {
+      background: $bg-light;
+    }
+  }
+}
 
 /////////////////////CRYPTOCURRENCIES/////////////////////
 
@@ -367,10 +390,9 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  margin-top: 144px;
   padding: 42px 56px;
   border-radius: 40px;
-  background: $bg-light;
+  grid-area: 1 / 1 / 2 / 13;
 
   &__list {
     display: flex;
@@ -405,4 +427,61 @@ button {
       color: $dark-40;
     }
   }
+}
+
+.start-crypto-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 79px 56px 42px;
+  border-radius: 40px;
+  grid-area: 2 / 1 / 3 / 6;
+
+  &__up {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__create-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    padding: 18px 39px;
+    width: 223px;
+    border-radius: 17px;
+    background: $blue-linear;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: $dark;
+
+    & > img {
+      width: 21px;
+    }
+  }
+}
+
+.exchange-rates {
+  padding: 42px 56px;
+  border-radius: 32px;
+  grid-area: 3 / 1 / 4 / 6;
+}
+
+.payment-statistics {
+  padding: 42px 56px;
+  border-radius: 32px;
+  grid-area: 2 / 6 / 4 / 13;
+}
+
+.send-coins {
+  padding: 0 42px 42px;
+  border-radius: 40px;
+  grid-area: 4 / 1 / 5 / 8;
+}
+
+.anonymous-payments {
+  padding: 42px;
+  border-radius: 32px;
+  grid-area: 4 / 8 / 5 / 13;
 }
