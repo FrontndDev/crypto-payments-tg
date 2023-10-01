@@ -345,6 +345,31 @@ button.telegram-button {
   font-weight: 590;
   color: #0D0D12;
 }
+.message.so-little {
+  gap: 21px;
+  padding: 10px 15px;
+}
+.message.so-little .message__time {
+  margin-top: -40px;
+  font-size: 13.889px;
+  line-height: 19.2px;
+  letter-spacing: -0.5px;
+}
+.message.so-little, .message.so-little p {
+  font-size: 18px;
+  line-height: 21.3px;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+.message.so-little > img, .message.so-little p > img {
+  margin-bottom: -2px;
+  width: 18px;
+  height: 18px;
+}
+.message.so-little strong, .message.so-little p strong {
+  font-weight: 700;
+  color: #000000;
+}
 
 .info {
   margin-top: 144px;
@@ -566,9 +591,18 @@ button.telegram-button {
 }
 
 .anonymous-payments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   padding: 42px;
   border-radius: 32px;
   grid-area: 4/8/5/13;
+}
+.anonymous-payments__up {
+  padding: 46px 21px;
+  height: 222px;
+  border-radius: 24px;
+  background: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
 }
 
 /*# sourceMappingURL=style.css.map */

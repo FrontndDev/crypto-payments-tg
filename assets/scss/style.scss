@@ -10,7 +10,8 @@ $gray: rgba(255, 255, 255, .24);
 $dark-gray: #232328;
 $general: #41A4DF;
 $blue-12: rgba(41, 126, 226, .12);
-$blue-linear: linear-gradient(240deg, rgba(41, 126, 226, .12) 3.57%, rgba(24, 97, 182, .12) 86.24%);
+$dark-blue-linear: linear-gradient(240deg, rgba(41, 126, 226, .12) 3.57%, rgba(24, 97, 182, .12) 86.24%);
+$blue-linear: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
 $deep-blue: #297EE2;
 $blue-rgba: rgba(54, 136, 194, .82);
 $purple: #8198D1;
@@ -421,6 +422,39 @@ button {
       color: $dark;
     }
   }
+
+  &.so-little {
+    gap: 21px;
+    padding: 10px 15px;
+
+    & .message {
+      &__time {
+        margin-top: -40px;
+        font-size: 13.889px;
+        line-height: 19.2px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+
+  &.so-little,
+  &.so-little p {
+    font-size: 18px;
+    line-height: 21.3px;
+    letter-spacing: -0.5px;
+    color: $black;
+
+    & > img {
+      margin-bottom: -2px;
+      width: 18px;
+      height: 18px;
+    }
+
+    & strong {
+      font-weight: 700;
+      color: $black;
+    }
+  }
 }
 ///////////////////////////INFO///////////////////////////
 
@@ -524,7 +558,7 @@ button {
     padding: 18px 39px;
     width: 223px;
     border-radius: 17px;
-    background: $blue-linear;
+    background: $dark-blue-linear;
     font-size: 22px;
     font-weight: 500;
     line-height: 26.4px;
@@ -682,7 +716,17 @@ button {
 }
 
 .anonymous-payments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   padding: 42px;
   border-radius: 32px;
   grid-area: 4 / 8 / 5 / 13;
+
+  &__up {
+    padding: 46px 21px;
+    height: 222px;
+    border-radius: 24px;
+    background: $blue-linear;
+  }
 }
