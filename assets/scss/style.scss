@@ -211,9 +211,17 @@ button {
     background: $blue-rgba;
     font-family: 'SF Pro Display', sans-serif;
     font-size: 19px;
-    font-weight: 510;
+    font-weight: 400;
     line-height: 17.9px;
     color: $white;
+
+    &.bg-purple {
+      background: $purple;
+    }
+
+    &:last-child {
+      border-radius: 7.8px 7.8px 16.7px 16.7px;
+    }
   }
 }
 
@@ -403,6 +411,7 @@ ul {
   font-weight: 400;
   line-height: 23.8px;
   letter-spacing: -0.6px;
+  word-break: break-word;
   position: relative;
 
   &.ml-6 {
@@ -513,8 +522,8 @@ ul {
     }
   }
 
-  &.black,
-  &.black p {
+  &.text-black,
+  &.text-black p {
     color: $black;
 
     & strong {
@@ -770,7 +779,6 @@ ul {
 
     & #tg-btn-back {
       grid-area: tg-btn-back;
-      border-radius: 7.8px 7.8px 16.7px 16.7px;
     }
   }
 }
@@ -835,38 +843,24 @@ ul {
     align-items: center;
 
     &.first-step {
-      & .quick-start__step {
-        &-manual {
-        }
-
-        &-example {
-          padding: 117px 99px;
-          background: $bg-purple;
-        }
+      & .quick-start__step-example {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        padding: 117px 99px;
+        background: $bg-purple;
       }
     }
 
     &.second-step {
-      & .quick-start__step {
-        &-manual {
-
-        }
-
-        &-example {
-          background: $bg-yellow;
-        }
+      & .quick-start__step-example {
+        background: $bg-yellow;
       }
     }
 
     &.third-step {
-      & .quick-start__step {
-        &-manual {
-
-        }
-
-        &-example {
-          background: $bg-blue;
-        }
+      & .quick-start__step-example {
+        background: $bg-blue;
       }
     }
 

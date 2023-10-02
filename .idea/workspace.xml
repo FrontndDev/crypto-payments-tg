@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f437457-1ada-411d-b19d-e1ae456a92ca" name="Changes" comment="Anonymous payments">
+    <list default="true" id="3f437457-1ada-411d-b19d-e1ae456a92ca" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/auto-sales/flash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/auto-sales/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/auto-sales/money.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/auto-sales/receipt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/auto-sales/tail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bots/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bots/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bots/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bots/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bots/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bots/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bots/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bots/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bots/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bots/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cryptocurrencies/bg-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cryptocurrencies/message.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cryptocurrencies/muscle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/cryptocurrencies/tree.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -66,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696157733138</updated>
       <workItem from="1696157734212" duration="6682000" />
-      <workItem from="1696195643550" duration="11464000" />
+      <workItem from="1696195643550" duration="13234000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696167504667</created>
@@ -96,15 +81,22 @@
       <option name="project" value="LOCAL" />
       <updated>1696199020616</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1696234014000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696234014000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
     <MESSAGE value="Anonymous payments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anonymous payments" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

@@ -170,9 +170,15 @@ button.telegram-button {
   background: rgba(54, 136, 194, 0.82);
   font-family: "SF Pro Display", sans-serif;
   font-size: 19px;
-  font-weight: 510;
+  font-weight: 400;
   line-height: 17.9px;
   color: #FFFFFF;
+}
+button.telegram-button.bg-purple {
+  background: #8198D1;
+}
+button.telegram-button:last-child {
+  border-radius: 7.8px 7.8px 16.7px 16.7px;
 }
 
 ol {
@@ -331,6 +337,7 @@ ul li::before {
   font-weight: 400;
   line-height: 23.8px;
   letter-spacing: -0.6px;
+  word-break: break-word;
   position: relative;
 }
 .message.ml-6 {
@@ -417,10 +424,10 @@ ul li::before {
 .message.so-little strong, .message.so-little p strong {
   font-weight: 700;
 }
-.message.black, .message.black p {
+.message.text-black, .message.text-black p {
   color: #000000;
 }
-.message.black strong, .message.black p strong {
+.message.text-black strong, .message.text-black p strong {
   color: #000000;
 }
 
@@ -634,7 +641,6 @@ ul li::before {
 }
 .payment-statistics__up #tg-btn-back {
   grid-area: tg-btn-back;
-  border-radius: 7.8px 7.8px 16.7px 16.7px;
 }
 
 .send-coins {
@@ -688,6 +694,9 @@ ul li::before {
   align-items: center;
 }
 .quick-start__step.first-step .quick-start__step-example {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
   padding: 117px 99px;
   background: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
 }
