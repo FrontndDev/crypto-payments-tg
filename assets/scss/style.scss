@@ -8,6 +8,7 @@ $dark-40: rgba(17, 17, 17, .40);
 $dark-80: rgba(17, 17, 17, .80);
 $gray: rgba(255, 255, 255, .24);
 $dark-gray: #232328;
+$dark-gray2: #252525;
 $general: #41A4DF;
 $blue-12: rgba(41, 126, 226, .12);
 $dark-blue-linear: linear-gradient(240deg, rgba(41, 126, 226, .12) 3.57%, rgba(24, 97, 182, .12) 86.24%);
@@ -17,6 +18,10 @@ $blue-rgba: rgba(54, 136, 194, .82);
 $purple: #8198D1;
 $bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
 $bg-pink-linear: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+$bg-yellow: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
+$bg-blue: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
+
+$dark-box-shadow: 0 0 8px 0 rgba(182, 186, 191, 0.04), 0 2px 3px 0 rgba(0, 0, 0, .02);
 
 //variables
 
@@ -44,9 +49,21 @@ body {
   }
 }
 
-ul[class],
-ol[class] {
-  list-style: none;
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  &[class] {
+    list-style: none;
+  }
+
+  & li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 a {
@@ -114,18 +131,31 @@ h2 {
   font-weight: 629;
   line-height: 61.6px;
   letter-spacing: -1.68px;
-  color: $general;
 
-  & > span {
-    color: $white;
+  &:not([class]) {
+    color: $general;
+
+    & > span {
+      color: $white;
+    }
+  }
+
+  &.dark-gray {
+    color: $dark-gray2;
+
+    & > span {
+      color: $general;
+    }
   }
 }
 
-h3 {
+h3,
+.h3-font {
   font-size: 42px;
   font-weight: 629;
   line-height: 46.2px;
   letter-spacing: -1.26px;
+  color: $dark;
 }
 
 h4 {
@@ -174,7 +204,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 9px;
+    column-gap: 8px;
     padding: 15px 0;
     width: 100%;
     border-radius: 7.8px;
@@ -184,6 +214,31 @@ button {
     font-weight: 510;
     line-height: 17.9px;
     color: $white;
+  }
+}
+
+ol {
+  padding-left: 24px;
+}
+
+ul {
+  padding-left: 28px;
+  list-style: none;
+
+  & li {
+    color: $dark-80;
+    position: relative;
+
+    &::before {
+      content: '●';
+      font-size: 15px;
+      line-height: 24px;
+      color: $general;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -19px;
+    }
   }
 }
 
@@ -363,7 +418,7 @@ button {
         content: '';
         width: 25px;
         height: 30px;
-        background-image: url("/assets/images/auto-sales/tail.png");
+        background-image: url("/assets/images/messages/tail.png");
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -415,11 +470,15 @@ button {
     font-size: 19px;
     letter-spacing: -0.56px;
     line-height: 22.37px;
-    color: $black;
+
+    & > img {
+      margin-bottom: -2px;
+      width: 18px;
+      height: 18px;
+    }
 
     & strong {
       font-weight: 590;
-      color: $dark;
     }
   }
 
@@ -442,7 +501,6 @@ button {
     font-size: 18px;
     line-height: 21.3px;
     letter-spacing: -0.5px;
-    color: $black;
 
     & > img {
       margin-bottom: -2px;
@@ -452,6 +510,14 @@ button {
 
     & strong {
       font-weight: 700;
+    }
+  }
+
+  &.black,
+  &.black p {
+    color: $black;
+
+    & strong {
       color: $black;
     }
   }
@@ -643,7 +709,7 @@ button {
     height: 96px;
     border-radius: 50%;
     background: $black-linear;
-    box-shadow: 0 0 8px 0 rgba(182, 186, 191, .04), 0 2px 3px 0 rgba(0, 0, 0, .02);
+    box-shadow: $dark-box-shadow;
 
     color: $white;
     font-size: 56px;
@@ -675,7 +741,7 @@ button {
     height: 526px;
     width: 100%;
     border-radius: 24px;
-    background-image: url("/assets/images/cryptocurrencies/bg-blue.png");
+    background-image: url("/assets/images/messages/bg-blue.png");
     background-size: cover;
 
     & .message {
@@ -710,9 +776,19 @@ button {
 }
 
 .send-coins {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
   padding: 0 42px 42px;
   border-radius: 40px;
   grid-area: 4 / 1 / 5 / 8;
+
+  &__up {
+    & > img {
+      margin: 0 auto;
+      height: 350px;
+    }
+  }
 }
 
 .anonymous-payments {
@@ -728,5 +804,95 @@ button {
     height: 222px;
     border-radius: 24px;
     background: $blue-linear;
+  }
+}
+
+/////////////////////////////QUICK-START///////////////////////////
+
+.quick-start {
+  margin-top: 144px;
+  padding: 120px 0;
+  background: $bg-light;
+
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &_mt-40 {
+      margin-top: 40px;
+    }
+  }
+
+  &__step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.first-step {
+      & .quick-start__step {
+        &-manual {
+        }
+
+        &-example {
+          padding: 117px 99px;
+          background: $bg-purple;
+        }
+      }
+    }
+
+    &.second-step {
+      & .quick-start__step {
+        &-manual {
+
+        }
+
+        &-example {
+          background: $bg-yellow;
+        }
+      }
+    }
+
+    &.third-step {
+      & .quick-start__step {
+        &-manual {
+
+        }
+
+        &-example {
+          background: $bg-blue;
+        }
+      }
+    }
+
+    &-manual {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 488px;
+    }
+
+    &-example {
+      width: 590px;
+      height: 488px;
+      border-radius: 40px;
+    }
+
+    &-num {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: $black-linear;
+      box-shadow: $dark-box-shadow;
+      color: $white;
+    }
   }
 }

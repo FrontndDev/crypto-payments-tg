@@ -26,18 +26,24 @@
 /********SF Pro Display********/
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Regular.woff2') format('ttf');
+    src: url('../fonts/SFPro/SFProDisplay-Regular.woff2') format('woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Medium.woff2') format('ttf');
+    src: url('../fonts/SFPro/SFProDisplay-Medium.woff2') format('woff');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('ttf');
+    src: url('../fonts/SFPro/SFProDisplay-Semibold.woff2') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('woff');
     font-weight: 700;
 }
