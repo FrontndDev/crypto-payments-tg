@@ -99,12 +99,6 @@ h2 {
   line-height: 61.6px;
   letter-spacing: -1.68px;
 }
-h2:not([class]) {
-  color: #41A4DF;
-}
-h2:not([class]) > span {
-  color: #FFFFFF;
-}
 h2.dark-gray {
   color: #252525;
 }
@@ -149,6 +143,9 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+}
+button.transparent {
+  border: 1px solid rgba(255, 255, 255, 0.6);
   color: #FFFFFF;
 }
 button.bg-blue {
@@ -204,6 +201,18 @@ ul li::before {
   left: -19px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.general {
+  color: #41A4DF;
+}
+
 .header {
   padding-top: 40px;
 }
@@ -212,7 +221,8 @@ ul li::before {
   justify-content: space-between;
   align-items: center;
 }
-.header__nav {
+
+.navigation {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -767,6 +777,64 @@ ul li::before {
 .quick-start__step-request .tabulation > div > span {
   display: block;
   width: 104px;
+}
+
+.crypto-pay-api {
+  margin-top: 72px;
+}
+.crypto-pay-api__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 147px 80px;
+  border-radius: 40px;
+  background: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+  position: relative;
+}
+.crypto-pay-api__body:before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-image: url("/assets/images/crypto-pay-api-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
+}
+
+.dev-community {
+  background: #232328;
+}
+.dev-community__body {
+  padding: 192px 0 80px;
+  border-radius: 0 0 40px 40px;
+  background: #FFFFFF;
+}
+.dev-community__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+.dev-community__content > p {
+  text-align: center;
+  color: rgba(17, 17, 17, 0.8);
+}
+.dev-community__items_my-16 {
+  margin: 16px 0;
+}
+
+.footer {
+  padding: 80px 0 40px;
+  background: #232328;
+}
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .navigation {
+  margin-left: 88px;
 }
 
 /*# sourceMappingURL=style.css.map */

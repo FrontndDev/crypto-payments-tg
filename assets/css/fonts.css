@@ -1,50 +1,50 @@
 /********Inter********/
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-Regular.ttf') format('ttf');
+    src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-Medium.ttf') format('ttf');
+    src: url('../fonts/Inter/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-SemiBold.ttf') format('ttf');
+    src: url('../fonts/Inter/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-Bold.ttf') format('ttf');
+    src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2');
     font-weight: 700;
 }
 
 /********SF Pro Display********/
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Regular.woff2') format('woff');
+    src: url('../fonts/SFPro/SFProDisplay-Regular.woff2') format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Medium.woff2') format('woff');
+    src: url('../fonts/SFPro/SFProDisplay-Medium.woff2') format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Semibold.woff2') format('woff');
+    src: url('../fonts/SFPro/SFProDisplay-Semibold.woff2') format('woff2');
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('woff');
+    src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('woff2');
     font-weight: 700;
 }
 

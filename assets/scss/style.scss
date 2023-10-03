@@ -35,7 +35,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -132,14 +132,6 @@ h2 {
   line-height: 61.6px;
   letter-spacing: -1.68px;
 
-  &:not([class]) {
-    color: $general;
-
-    & > span {
-      color: $white;
-    }
-  }
-
   &.dark-gray {
     color: $dark-gray2;
 
@@ -188,7 +180,11 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  color: $white;
+
+  &.transparent {
+    border: 1px solid $white-60;
+    color: $white;
+  }
 
   &.bg-blue {
     background: $blue-12;
@@ -250,6 +246,20 @@ ul {
   }
 }
 
+////////////////////////////////////////////
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.white {
+  color: $white;
+}
+
+.general {
+  color: $general;
+}
+
 ////////////////////HEADER//////////////////
 
 .header {
@@ -260,13 +270,17 @@ ul {
     justify-content: space-between;
     align-items: center;
   }
-
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
 }
+
+////////////////////////NAVIGATION//////////////////////
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+///////////////////////////LOGO/////////////////////////
 
 .logo {
   width: 64px;
@@ -936,5 +950,83 @@ ul {
         }
       }
     }
+  }
+}
+
+////////////////////////////CRYPTO-PAY-API/////////////////////////
+
+.crypto-pay-api {
+  margin-top: 72px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 147px 80px;
+    border-radius: 40px;
+    background: $blue-linear;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      background-image: url("/assets/images/crypto-pay-api-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+
+////////////////////////////DEV-COMMUNITY/////////////////////////
+
+.dev-community {
+  background: $dark-gray;
+
+  &__body {
+    padding: 192px 0 80px;
+    border-radius: 0 0 40px 40px;
+    background: $white;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+
+    & > p {
+      text-align: center;
+      color: $dark-80;
+    }
+  }
+
+  &__items {
+    &_my-16 {
+      margin: 16px 0;
+    }
+  }
+}
+
+////////////////////////////////FOOTER/////////////////////////////
+
+.footer {
+  padding: 80px 0 40px;
+  background: $dark-gray;
+
+  &__body {
+
+  }
+
+  &__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .navigation {
+    margin-left: 88px;
   }
 }
