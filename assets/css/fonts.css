@@ -47,3 +47,11 @@
     src: url('../fonts/SFPro/SFProDisplay-Bold.woff2') format('woff');
     font-weight: 700;
 }
+
+/*************SF Mono*************/
+
+@font-face {
+    font-family: 'SF Mono Regular';
+    font-weight: 400;
+    src: local('SF Mono Regular'), url('../fonts/SFMono/SFMonoRegular.woff') format('woff');
+}
