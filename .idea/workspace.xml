@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f437457-1ada-411d-b19d-e1ae456a92ca" name="Changes" comment="quick start">
+    <list default="true" id="3f437457-1ada-411d-b19d-e1ae456a92ca" name="Changes" comment="fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Inter/Inter-Thin.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -62,7 +52,7 @@
       <updated>1696157733138</updated>
       <workItem from="1696157734212" duration="6682000" />
       <workItem from="1696195643550" duration="13262000" />
-      <workItem from="1696357377527" duration="7786000" />
+      <workItem from="1696357377527" duration="10255000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696167504667</created>
@@ -113,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696360294678</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixes">
+      <created>1696366552788</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696366552788</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +121,7 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Authorizing your app" />
     <MESSAGE value="quick start" />
-    <option name="LAST_COMMIT_MESSAGE" value="quick start" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>

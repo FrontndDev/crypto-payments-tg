@@ -1004,8 +1004,32 @@ ul {
   }
 
   &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+
     &_my-16 {
       margin: 16px 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    & > img {
+      margin-bottom: -8px;
+      width: 96px;
+    }
+
+    & > span {
+      max-width: 179px;
+      font-weight: 500;
+      font-size: 20px;
+      color: $dark-80;
+      text-align: center;
     }
   }
 }
@@ -1017,7 +1041,9 @@ ul {
   background: $dark-gray;
 
   &__body {
-
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
   }
 
   &__up {
@@ -1028,5 +1054,11 @@ ul {
 
   & .navigation {
     margin-left: 88px;
+  }
+
+  &__down {
+    font-weight: 500;
+    font-size: 20px;
+    color: $white;
   }
 }
