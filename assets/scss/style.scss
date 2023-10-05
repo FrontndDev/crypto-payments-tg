@@ -4,8 +4,8 @@ $bg-light: #F7F9FB;
 $black: #000000;
 $black-linear: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
 $dark: #0D0D12;
-$dark-40: rgba(17, 17, 17, .40);
-$dark-80: rgba(17, 17, 17, .80);
+$dark-40: rgba(17, 17, 17, .4);
+$dark-80: rgba(17, 17, 17, .8);
 $gray: rgba(255, 255, 255, .24);
 $dark-gray: #232328;
 $dark-gray2: #252525;
@@ -14,8 +14,10 @@ $blue-12: rgba(41, 126, 226, .12);
 $dark-blue-linear: linear-gradient(240deg, rgba(41, 126, 226, .12) 3.57%, rgba(24, 97, 182, .12) 86.24%);
 $blue-linear: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
 $deep-blue: #297EE2;
+$dark-blue: #034AAB;
 $blue-rgba: rgba(54, 136, 194, .82);
 $purple: #8198D1;
+$light-purple: #96ADC6;
 $bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
 $bg-pink-linear: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
 $bg-yellow: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
@@ -210,6 +212,21 @@ button {
     font-weight: 400;
     line-height: 17.9px;
     color: $white;
+    position: relative;
+
+    &__arrow {
+      position: absolute;
+
+      &_top-right {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &:disabled {
+      background: $light-purple;
+      cursor: not-allowed;
+    }
 
     &.bg-purple {
       background: $purple;
@@ -217,6 +234,17 @@ button {
 
     &:last-child {
       border-radius: 7.8px 7.8px 16.7px 16.7px;
+    }
+  }
+}
+
+.telegram-button {
+  &__arrow {
+    position: absolute;
+
+    &_top-right {
+      top: 8px;
+      right: 8px;
     }
   }
 }
@@ -235,7 +263,7 @@ ul {
 
     &::before {
       content: '●';
-      font-size: 15px;
+      font-size: 9px;
       line-height: 24px;
       color: $general;
       position: absolute;
@@ -260,6 +288,22 @@ ul {
   color: $general;
 }
 
+.bg-pink {
+  background: $bg-pink-linear;
+}
+
+.bg-blue {
+  background: $bg-blue;
+}
+
+.bg-yellow {
+  background: $bg-yellow;
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+
 ////////////////////HEADER//////////////////
 
 .header {
@@ -269,6 +313,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    & > svg {
+      cursor: pointer;
+    }
   }
 }
 
@@ -331,9 +385,9 @@ ul {
   }
 }
 
-////////////////////////AUTO-SALES//////////////////////////////
+////////////////////////slider//////////////////////////////
 
-.auto-sales {
+.slider {
   margin-top: 97px;
   background: $dark-gray;
   width: 100%;
@@ -342,14 +396,24 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh + 1px);
+    overflow: hidden;
   }
 
   &__content {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 122px;
+
+    &:not(.active) {
+      animation: hidden-slide 1s ease;
+    }
+
+    &.active {
+      display: flex;
+      animation: show-slide 1s ease;
+    }
   }
 
   &__block {
@@ -358,11 +422,39 @@ ul {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    padding: 0 42px 0 41px;
     width: 488px;
     height: 488px;
     border-radius: 40px;
-    background: $bg-pink-linear;
+    position: relative;
+
+    & > svg {
+      margin: auto;
+      position: absolute;
+      inset: 0;
+      bottom: 31px;
+    }
+
+    &_first {
+      padding: 0 42px 0 41px;
+    }
+
+    &_second {
+      padding: 0 47px;
+    }
+
+    &_third {
+      row-gap: 14px !important;
+      padding: 0 47px;
+
+      & > .code {
+        padding: 16px 10px 16px 16px;
+        border-radius: 8.3px 8.3px 17.8px 17.8px;
+
+        & .tabulation > div > span {
+          width: 94px;
+        }
+      }
+    }
 
     &.messages {
       gap: 5px;
@@ -408,15 +500,22 @@ ul {
       }
     }
   }
+
+  &:not(:first-child) {
+    & .message.not-last {
+      border-radius: 17.8px 17.8px 8.3px 8.3px;
+    }
+  }
 }
 
-///////////////////////MESSAGE//////////////////////////
+//////////////////////////MESSAGE//////////////////////////
 
 .message {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 10px 17px;
+  width: 100%;
   border-radius: 17.8px;
   background: $white;
 
@@ -457,6 +556,7 @@ ul {
 
     & > img {
       display: inline;
+      margin-bottom: -1px;
       width: 20.25px;
       height: 20.25px;
     }
@@ -544,7 +644,55 @@ ul {
       color: $black;
     }
   }
+
+  &.flat-bottom {
+    border-radius: 17.8px 17.8px 8.3px 8.3px;
+  }
 }
+///////////////////////////CODE///////////////////////////
+
+.code {
+  padding: 16.6px;
+  width: 100%;
+  border-radius: 20px;
+  background: #0D0D12;
+  font-family: "SF Mono Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.4px;
+  letter-spacing: -0.59px;
+  color: #FFFFFF;
+
+  & .yellow {
+    color: #FCEF8F;
+  }
+
+  & .red {
+    color: #D46565;
+  }
+
+  & .blue {
+    color: #5DB0E2;
+  }
+
+  & .light-blue {
+    color: #61BAEF;
+  }
+
+  & .tabulation {
+    padding-left: 32px;
+
+    & > div {
+      display: flex;
+
+      & > span {
+        display: block;
+        width: 104px;
+      }
+    }
+  }
+}
+
 ///////////////////////////INFO///////////////////////////
 
 .info {
@@ -590,6 +738,20 @@ ul {
     &_mt-22 {
       margin-top: 22px;
     }
+
+    @for $i from 1 through 8 {
+      .cryptocurrencies__item {
+        &:nth-child(#{$i}) {
+          & > img {
+            animation-delay: $i * (8s / 25);
+          }
+
+          & .cryptocurrencies__item-name {
+            animation-delay: $i * (8s / 25);
+          }
+        }
+      }
+    }
   }
 
   &__item {
@@ -598,13 +760,10 @@ ul {
     align-items: center;
     row-gap: 12px;
 
-    &-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: -8px;
-      width: 113px;
-      height: 112px;
+    & > img {
+      width: 96px;
+      height: 96px;
+      animation: .375s scaleCryptocurrencies ease-in forwards;
     }
 
     &-name {
@@ -613,6 +772,7 @@ ul {
       line-height: 16.8px;
       text-transform: uppercase;
       color: $dark-40;
+      animation: .375s changeTextColor ease-in forwards;
     }
   }
 }
@@ -908,48 +1068,6 @@ ul {
       box-shadow: $dark-box-shadow;
       color: $white;
     }
-
-    &-request {
-      padding: 16.6px;
-      width: 100%;
-      border-radius: 20px;
-      background: #0D0D12;
-      font-family: "SF Mono Regular", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27.4px;
-      letter-spacing: -0.59px;
-      color: #FFFFFF;
-
-      & .yellow {
-        color: #FCEF8F;
-      }
-
-      & .red {
-        color: #D46565;
-      }
-
-      & .blue {
-        color: #5DB0E2;
-      }
-
-      & .light-blue {
-        color: #61BAEF;
-      }
-
-      & .tabulation {
-        padding-left: 32px;
-
-        & > div {
-          display: flex;
-
-          & > span {
-            display: block;
-            width: 104px;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -1060,5 +1178,45 @@ ul {
     font-weight: 500;
     font-size: 20px;
     color: $white;
+  }
+}
+
+@keyframes show-slide {
+  0% {
+    transform: translateY(488px * 1.5);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hidden-slide {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(488px * 1.5);
+  }
+}
+
+@keyframes scaleCryptocurrencies {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes changeTextColor {
+  50% {
+    color: $dark-80;
   }
 }

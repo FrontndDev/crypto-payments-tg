@@ -21,7 +21,27 @@
                     <a href="#" class="navigation__link">How to start</a>
                 </nav>
 
-                <button class="bg-blue">Get started</button>
+                <div class="header__right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_14137_31)">
+                            <path d="M16.0002 22.6666C19.6821 22.6666 22.6668 19.6818 22.6668 15.9999C22.6668 12.318 19.6821 9.33325 16.0002 9.33325C12.3183 9.33325 9.3335 12.318 9.3335 15.9999C9.3335 19.6818 12.3183 22.6666 16.0002 22.6666Z" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 1.33325V3.99992" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 28V30.6667" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.62646 5.62671L7.5198 7.52004" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.48 24.48L26.3733 26.3733" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.3335 16H4.00016" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28 16H30.6667" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.62646 26.3733L7.5198 24.48" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.48 7.52004L26.3733 5.62671" stroke="#111111" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_14137_31">
+                                <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <button class="bg-blue">Get started</button>
+                </div>
             </div>
         </div>
     </header>
@@ -50,11 +70,11 @@
                 </div>
             </div>
         </section>
-        <section class="auto-sales">
+        <section class="slider">
             <div class="container">
-                <div class="auto-sales__body">
-                    <div class="auto-sales__content">
-                        <div class="auto-sales__block messages">
+                <div class="slider__body">
+                    <div class="slider__content first active">
+                        <div class="slider__block slider__block_first bg-pink messages">
                             <div class="message ml-6">
                                 <p>
                                     <img src="/assets/images/messages/money.png" alt="money">
@@ -77,23 +97,116 @@
                             </div>
                         </div>
 
-                        <div class="auto-sales__info">
+                        <div class="slider__info">
                             <h2 class="general">
                                 Instant <br> Auto Sales: <br> <span class="white">Boost conversion</span>
                             </h2>
-                            <p class="auto-sales__description">
+                            <p class="slider__description">
                                 Immediately deliver digital products <br> and services to your users.
                             </p>
                             <button class="bg-deep-blue">Open API Docs</button>
                         </div>
                     </div>
+                    <div class="slider__content second">
+                        <div class="slider__block slider__block_second bg-yellow messages">
+                            <div class="message not-last">
+                                <p>
+                                    <img src="/assets/images/messages/money.png" alt="money">
+                                    You sent 3,5 TON ($5.08).
+                                </p>
+                                <p><strong>Recipient:</strong> CuteCats Channel</p>
+                                <p>
+                                    <img src="/assets/images/messages/receipt.png" alt="receipt">
+                                    Exclusive access to the channel
+                                    <img src="/assets/images/messages/cat.png" alt="cat" style="margin: 0 0 -2px 5px;">
+                                </p>
+                                <p></p>
+                                <time class="message__time">21:30</time>
+                            </div>
+                            <button class="telegram-button with-arrow" disabled>
+                                View Channel
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        class="telegram-button__arrow telegram-button__arrow_top-right"
+                                >
+                                    <path d="M1.79395 8.70577L8.941 1.55872M8.941 1.55872V8.70577M8.941 1.55872H1.79395" stroke="white" stroke-width="2.02195" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
 
-                    <div class="auto-sales__navigation">
-                        <div class="auto-sales__navigation-num">01</div>
-                        <div class="auto-sales__navigation-button active"></div>
-                        <div class="auto-sales__navigation-button"></div>
-                        <div class="auto-sales__navigation-button"></div>
-                        <div class="auto-sales__navigation-num">03</div>
+                        <div class="slider__info">
+                            <h2 class="general">
+                                Channels <br> Integration: <br> <span class="white">Seamless access</span>
+                            </h2>
+                            <p class="slider__description">
+                                Automatically unlock exclusive content <br> to your users.
+                            </p>
+                            <button class="bg-deep-blue">Open API Docs</button>
+                        </div>
+                    </div>
+                    <div class="slider__content third">
+                        <div class="slider__block slider__block_third bg-blue messages">
+                            <div class="message not-last">
+                                <p>
+                                    <img src="/assets/images/messages/money.png" alt="money">
+                                    You sent 3,99 USDT ($3.99).
+                                </p>
+                                <p><strong>Recipient:</strong> <a href="#" class="dark-blue">@StoresBot</a></p>
+                                <p>
+                                    <img src="/assets/images/messages/receipt.png" alt="receipt">
+                                    One month of Premium access
+                                    <img src="/assets/images/messages/star.png" alt="star" style="margin-bottom: -2px;">
+                                </p>
+                                <p></p>
+                                <time class="message__time">22:10</time>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="47" viewBox="0 0 46 47" fill="none">
+                                <rect x="0.103027" y="0.985352" width="45.2647" height="45.2647" rx="12.4256" fill="url(#paint0_linear_1_849)"/>
+                                <ellipse cx="22.9516" cy="13.4892" rx="2.74116" ry="2.74116" fill="white"/>
+                                <ellipse cx="22.9516" cy="22.104" rx="2.74116" ry="2.74116" fill="white"/>
+                                <path d="M24.3415 35.8337C23.6849 36.8464 22.2049 36.8464 21.5483 35.8337L18.1257 30.5551C17.4061 29.4453 18.2012 27.9782 19.5223 27.9782L26.3675 27.9782C27.6886 27.9782 28.4838 29.4453 27.7642 30.5551L24.3415 35.8337Z" fill="white"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_849" x1="41.6334" y1="-25.6797" x2="-18.1734" y2="19.0193" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9FCCFA"/>
+                                        <stop offset="1" stop-color="#0974F1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="code">
+                                <span class="light-blue">Invoice</span>(
+                                <div class="tabulation">
+                                    <div><span class="light-blue">payload:</span>“item:monthly_premium”,</div>
+                                    <div><span class="light-blue">status:</span>“paid”,</div>
+                                    <div><span class="light-blue">amount:</span>“3.99”,</div>
+                                    <div><span class="light-blue">asset:</span>“USDT”</div>
+                                </div>
+                                )
+                            </div>
+                        </div>
+
+                        <div class="slider__info">
+                            <h2 class="general">
+                                Endless <br> customization: <br> <span class="white">with Webhooks</span>
+                            </h2>
+                            <p class="slider__description">
+                                Receive successful payment notifications in
+                                <br>
+                                real-time. Integrate to any scenario of your service.
+                            </p>
+                            <button class="bg-deep-blue">Open API Docs</button>
+                        </div>
+                    </div>
+
+                    <div class="slider__navigation">
+                        <div class="slider__navigation-num" id="active-slide-number">01</div>
+                        <div class="slider__navigation-button first active"></div>
+                        <div class="slider__navigation-button second"></div>
+                        <div class="slider__navigation-button third"></div>
+                        <div class="slider__navigation-num">03</div>
                     </div>
                 </div>
             </div>
@@ -106,283 +219,35 @@
                         <p>Bill any supported cryptocurrencies with asset parameter in <a href="#">GetInvoice</a> method</p>
                         <div class="cryptocurrencies__list cryptocurrencies__list_mt-22">
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_79)">
-                                            <rect x="8" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_79)"/>
-                                            <rect x="8" y="8" width="96" height="96" rx="48" fill="url(#paint1_linear_1_79)"/>
-                                            <path d="M55.7656 24.582L55.332 26.0186V67.6998L55.7656 68.1217L75.6018 56.6852L55.7656 24.582Z" fill="#343434"/>
-                                            <path d="M55.7624 24.582L35.9258 56.6852L55.7624 68.1217V47.8908V24.582Z" fill="#8C8C8C"/>
-                                            <path d="M55.7639 71.7846L55.5195 72.0753V86.9227L55.7639 87.6186L75.6122 60.354L55.7639 71.7846Z" fill="#3C3C3B"/>
-                                            <path d="M55.7624 87.6186V71.7846L35.9258 60.354L55.7624 87.6186Z" fill="#8C8C8C"/>
-                                            <path d="M55.7617 68.1206L75.5979 56.684L55.7617 47.8896V68.1206Z" fill="#141414"/>
-                                            <path d="M35.9258 56.6842L55.7624 68.1207V47.8898L35.9258 56.6842Z" fill="#393939"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_79" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_79"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_79" result="effect2_dropShadow_1_79"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_79" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_79" x1="155.491" y1="-31.2727" x2="-29.5273" y2="153.745" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#E9E9E7"/>
-                                                <stop offset="0.271524" stop-color="#EFEEEC"/>
-                                                <stop offset="0.608677" stop-color="#EEEEEC"/>
-                                                <stop offset="1" stop-color="#D5D4D0"/>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_1_79" x1="6.17242" y1="186.969" x2="119.061" y2="162.577" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#EEEDF1"/>
-                                                <stop offset="1" stop-color="white"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/eth.png" alt="eth" loading="lazy">
                                 <div class="cryptocurrencies__item-name">ETH</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_89)">
-                                            <rect x="8.71436" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_89)"/>
-                                            <path d="M79.5022 30.6909H33.3081V41.8431H50.8291V58.2347H61.9812V41.8431H79.5022V30.6909Z" fill="white"/>
-                                            <path d="M56.5113 59.9808C42.0174 59.9808 30.2666 57.6869 30.2666 54.8569C30.2666 52.0274 42.0169 49.7331 56.5113 49.7331C71.0051 49.7331 82.7554 52.0274 82.7554 54.8569C82.7554 57.6869 71.0051 59.9808 56.5113 59.9808ZM85.9795 55.7111C85.9795 52.0621 72.7863 49.1042 56.5113 49.1042C40.2367 49.1042 27.0425 52.0621 27.0425 55.7111C27.0425 58.9246 37.2731 61.6019 50.8298 62.1951V85.7258H61.981V62.2044C75.6421 61.6297 85.9795 58.9412 85.9795 55.7111Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_89" x="0.714355" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_89"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_89" result="effect2_dropShadow_1_89"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_89" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_89" x1="17.878" y1="139.782" x2="65.4416" y2="38.5454" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#8DDAD5"/>
-                                                <stop offset="1" stop-color="#1BA27A"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/usdt.png" alt="usdt" loading="lazy">
                                 <div class="cryptocurrencies__item-name">USDT</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_95)">
-                                            <rect x="8.42871" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_95)"/>
-                                            <path d="M72.8175 34.7903H40.0374C34.0103 34.7903 30.1904 41.2917 33.2225 46.5475L53.4531 81.6129C54.7733 83.9025 58.0817 83.9025 59.4018 81.6129L79.6366 46.5475C82.6647 41.3001 78.8446 34.7903 72.8216 34.7903H72.8175ZM53.4366 71.0973L49.0307 62.5703L38.3998 43.5566C37.6985 42.3397 38.5647 40.7802 40.0333 40.7802H53.4325V71.1014L53.4366 71.0973ZM74.4469 43.5525L63.8201 62.5744L59.4142 71.0973V40.7761H72.8134C74.282 40.7761 75.1482 42.3355 74.4469 43.5525Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_95" x="0.428711" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_95"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_95" result="effect2_dropShadow_1_95"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_95" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_95" x1="97.8833" y1="0.58182" x2="22.3923" y2="125.382" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#04BEFE"/>
-                                                <stop offset="1" stop-color="#4481EB"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/ton.png" alt="ton" loading="lazy">
                                 <div class="cryptocurrencies__item-name">TON</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_99)">
-                                            <rect x="8.14307" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_99)"/>
-                                            <path d="M79.2642 49.0905C80.3168 42.0423 74.9489 38.2551 67.6033 35.7264L69.9828 26.1746L64.1718 24.7269L61.8558 34.0239C60.33 33.6438 58.7601 33.2832 57.2015 32.9299L59.5329 23.5713L53.7219 22.1236L51.3403 31.6663C50.0757 31.3774 48.8317 31.0937 47.6267 30.7936L47.6339 30.7648L39.6196 28.7639L38.0728 34.9728C38.0728 34.9728 42.3868 35.9602 42.2933 36.0199C44.6498 36.6069 45.0746 38.1626 45.0027 39.398L42.2923 50.2781C42.4568 50.319 42.6645 50.3795 42.8948 50.4718L42.282 50.3192L38.4807 65.5609C38.1935 66.2754 37.4635 67.3469 35.8175 66.9412C35.8751 67.0254 31.5939 65.889 31.5939 65.889L28.7092 72.542L36.2763 74.4271C37.6828 74.7775 39.0625 75.1474 40.4176 75.4937L38.0155 85.1535L43.8224 86.6002L46.203 77.0442C47.7864 77.4735 49.3255 77.8701 50.8348 78.2461L48.4614 87.7558L54.2724 89.2034L56.6734 79.5652C66.5841 81.4402 74.0451 80.683 77.1786 71.7164C79.7062 64.4984 77.0536 60.3309 71.8377 57.6166C75.6402 56.7472 78.5028 54.2505 79.2642 49.0905ZM65.9853 67.7139C64.1876 74.9302 52.0333 71.0333 48.0893 70.0508L51.2781 57.2505C55.22 58.2412 67.8599 60.1891 65.9853 67.7139ZM67.7772 48.9845C66.1413 55.5512 56.0186 52.2128 52.7358 51.3993L55.6265 39.7956C58.9124 40.6142 69.4868 42.1392 67.7772 48.9845Z" fill="white"/>
-                                            <path d="M42.3657 50.0254L43.2294 50.2405L43.0706 50.8779L42.2069 50.6627L42.3657 50.0254Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_99" x="0.143066" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_99"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_99" result="effect2_dropShadow_1_99"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_99" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_99" x1="-8.43876" y1="171.2" x2="86.6885" y2="8" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#FF930F"/>
-                                                <stop offset="1" stop-color="#FBC411"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/btc.png" alt="btc" loading="lazy">
                                 <div class="cryptocurrencies__item-name">BTC</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_105)">
-                                            <rect x="8.85742" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_105)"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M83.885 47.4775C82.7423 46.4224 81.4175 45.1361 80.037 43.7957C78.0979 41.913 76.049 39.9236 74.2407 38.3186L74.0575 38.1904C73.7527 37.9456 73.4091 37.7537 73.0409 37.6225L71.645 37.3621C62.0148 35.5652 30.801 29.741 30.1589 29.8191C29.969 29.8457 29.7875 29.9146 29.6277 30.0206L29.4537 30.158C29.2394 30.3756 29.0767 30.6385 28.9774 30.9274L28.9316 31.0464V31.6967V31.7975C31.0508 37.6984 36.5558 50.8766 41.6388 63.0446L41.6389 63.0448L41.639 63.0449L41.6391 63.0451C45.9364 73.3324 49.9321 82.8975 51.3251 86.7325L51.3256 86.7341C51.509 87.3023 51.857 88.3811 52.5066 88.436H52.6532C53.0012 88.436 54.485 86.476 54.485 86.476C54.485 86.476 81.0091 54.31 83.6927 50.8846C84.04 50.4626 84.3467 50.0088 84.6086 49.5291C84.7445 48.7656 84.4698 47.9868 83.885 47.4775ZM61.291 51.2233L72.6114 41.8354L79.2516 47.9536L61.291 51.2233ZM37.4043 34.6367L56.8944 50.6098L68.9384 40.4526L37.4043 34.6367ZM58.6527 54.7954L78.6007 51.5806L55.7951 79.0573L58.6527 54.7954ZM55.2626 53.6319L34.7559 36.23L52.2951 79.0753L55.2626 53.6319Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_105" x="0.857422" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_105"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_105" result="effect2_dropShadow_1_105"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_105" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_105" x1="71.6938" y1="21.9636" x2="8.85743" y2="151.127" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#FC070C"/>
-                                                <stop offset="1" stop-color="#F45C43"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/trx.png" alt="trx" loading="lazy">
                                 <div class="cryptocurrencies__item-name">TRX</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="97" height="96" viewBox="0 0 97 96" fill="none">
-                                        <g clip-path="url(#clip0_1_115)">
-                                            <path d="M48.5714 90.8049C72.2119 90.8049 91.3763 71.6405 91.3763 48C91.3763 24.3596 72.2119 5.19519 48.5714 5.19519C24.931 5.19519 5.7666 24.3596 5.7666 48C5.7666 71.6405 24.931 90.8049 48.5714 90.8049Z" fill="white"/>
-                                            <g filter="url(#filter0_dd_1_115)">
-                                                <path d="M48.5713 0C39.0778 0 29.7975 2.81515 21.9039 8.08946C14.0104 13.3638 7.8581 20.8603 4.22509 29.6312C0.592087 38.4021 -0.358473 48.0532 1.49362 57.3643C3.34571 66.6754 7.91727 75.2282 14.6302 81.9411C21.3431 88.654 29.8959 93.2256 39.207 95.0777C48.5181 96.9298 58.1693 95.9792 66.9401 92.3462C75.711 88.7132 83.2075 82.5609 88.4818 74.6674C93.7562 66.7738 96.5713 57.4935 96.5713 48C96.5896 41.7149 95.3699 35.4876 92.9816 29.6739C90.5933 23.8602 87.0833 18.5738 82.652 14.1166C78.2206 9.65937 72.9548 6.11861 67.1551 3.69648C61.3554 1.27436 55.1354 0.0182884 48.8502 0H48.5713ZM49.3849 49.6271L44.3873 66.4794H71.1185C71.2956 66.4732 71.4722 66.502 71.6381 66.564C71.8041 66.6261 71.9562 66.7203 72.0857 66.8412C72.2152 66.9621 72.3196 67.1073 72.393 67.2686C72.4664 67.4299 72.5072 67.604 72.5132 67.7811V68.2228L70.1888 76.2421C70.0863 76.6214 69.8579 76.9545 69.5411 77.1868C69.2243 77.4191 68.8379 77.5368 68.4454 77.5206H27.535L34.3921 54.1598L26.7214 56.4843L28.4648 51.138L36.1355 48.8136L45.782 16.0387C45.8882 15.6616 46.1175 15.3309 46.4334 15.0992C46.7493 14.8675 47.1337 14.7482 47.5253 14.7603H57.8691C58.0462 14.7541 58.2228 14.7828 58.3887 14.8449C58.5547 14.907 58.7068 15.0012 58.8363 15.122C58.9658 15.2429 59.0702 15.3882 59.1436 15.5495C59.217 15.7107 59.2578 15.8849 59.2638 16.062V16.5036L51.1282 44.1646L58.7989 41.8402L57.1718 47.4189L49.3849 49.6271Z" fill="url(#paint0_linear_1_115)"/>
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_115" x="-7.42871" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_115"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_115" result="effect2_dropShadow_1_115"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_115" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_115" x1="16.5713" y1="-2.5" x2="76.0713" y2="102" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#3F68A8"/>
-                                                <stop offset="1" stop-color="#2C5493"/>
-                                            </linearGradient>
-                                            <clipPath id="clip0_1_115">
-                                                <rect width="96" height="96" fill="white" transform="translate(0.571289)"/>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/ltc.png" alt="ltc" loading="lazy">
                                 <div class="cryptocurrencies__item-name">LTC</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
-                                        <g filter="url(#filter0_dd_1_120)">
-                                            <rect x="8.28564" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_120)"/>
-                                            <path d="M69.9839 63.5816C69.9839 56.4318 65.6939 53.9804 57.1139 52.9591C50.9854 52.1418 49.7597 50.5077 49.7597 47.6474C49.7597 44.7871 51.8027 42.949 55.8882 42.949C59.5654 42.949 61.6084 44.1747 62.6297 47.239C62.8341 47.8518 63.447 48.2602 64.0598 48.2602H67.328C68.1453 48.2602 68.7582 47.6474 68.7582 46.8306V46.6261C67.9409 42.1317 64.2638 38.659 59.5654 38.2506V33.3477C59.5654 32.5304 58.9525 31.9176 57.9313 31.7131H54.867C54.0497 31.7131 53.4368 32.326 53.2324 33.3477V38.0461C47.1038 38.8634 43.2227 42.949 43.2227 48.0563C43.2227 54.7977 47.3083 57.4531 55.8882 58.4748C61.6084 59.4961 63.447 60.7218 63.447 63.9905C63.447 67.2593 60.5866 69.5062 56.7055 69.5062C51.3938 69.5062 49.5552 67.2588 48.9424 64.1945C48.7384 63.3777 48.1256 62.9688 47.5127 62.9688H44.0395C43.2227 62.9688 42.6099 63.5816 42.6099 64.3989V64.6034C43.4267 69.7102 46.6954 73.3873 53.4368 74.4091V79.3119C53.4368 80.1287 54.0497 80.7416 55.0709 80.946H58.1352C58.9525 80.946 59.5654 80.3332 59.7698 79.3119V74.4091C65.8984 73.3873 69.9839 69.0973 69.9839 63.5816Z" fill="white"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.9007 45.809C21.9761 61.5393 30.1477 79.3121 46.0819 85.0318C46.6948 85.4407 47.3076 86.2575 47.3076 86.8703V89.7307C47.3076 90.1391 47.3076 90.3435 47.1032 90.5475C46.8992 91.3648 46.0819 91.7732 45.2646 91.3648C33.8248 87.6876 25.0404 78.9032 21.3633 67.4634C15.2347 48.0565 25.8577 27.4233 45.2646 21.2948C45.4691 21.0908 45.8775 21.0908 46.0819 21.0908C46.8992 21.2948 47.3076 21.9076 47.3076 22.7249V25.5848C47.3076 26.6065 46.8992 27.2194 46.0819 27.6278C37.7064 30.6921 30.965 37.229 27.9007 45.809ZM65.8924 22.1118C66.0964 21.2945 66.9137 20.8861 67.731 21.2945C78.9664 24.9716 87.9552 33.756 91.6324 45.4003C97.7609 64.8072 87.1379 85.4404 67.731 91.5689C67.5266 91.7729 67.1181 91.7729 66.9137 91.7729C66.0964 91.5689 65.688 90.9561 65.688 90.1388V87.2789C65.688 86.2572 66.0964 85.6443 66.9137 85.2359C75.2892 82.1716 82.0306 75.6347 85.0949 67.0547C91.0195 51.3244 82.8479 33.5516 66.9137 27.8319C66.3008 27.423 65.688 26.6062 65.688 25.7889V22.9291C65.688 22.5202 65.688 22.3162 65.8924 22.1118Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_dd_1_120" x="0.285645" y="0" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset/>
-                                                <feGaussianBlur stdDeviation="4"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_120"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dy="2"/>
-                                                <feGaussianBlur stdDeviation="1.5"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
-                                                <feBlend mode="normal" in2="effect1_dropShadow_1_120" result="effect2_dropShadow_1_120"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_120" result="shape"/>
-                                            </filter>
-                                            <linearGradient id="paint0_linear_1_120" x1="61.522" y1="47.2727" x2="-30.1144" y2="183.418" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#2775CA"/>
-                                                <stop offset="1" stop-color="#00BBF9"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/usdc.png" alt="usdc" loading="lazy">
                                 <div class="cryptocurrencies__item-name">USDC</div>
                             </div>
                             <div class="cryptocurrencies__item">
-                                <div class="cryptocurrencies__item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-                                        <g clip-path="url(#clip0_1_128)">
-                                            <mask id="mask0_1_128" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
-                                                <path d="M0 -7.62939e-06H96V96H0V-7.62939e-06Z" fill="white"/>
-                                            </mask>
-                                            <g mask="url(#mask0_1_128)">
-                                                <path d="M48 -7.62939e-06C74.5097 -7.62939e-06 96 21.4903 96 48C96 74.5097 74.5097 96 48 96C21.4903 96 0 74.5097 0 48C0 21.4903 21.4903 -7.62939e-06 48 -7.62939e-06Z" fill="url(#paint0_linear_1_128)"/>
-                                                <path d="M35.5799 42.844L42.8479 35.6L44.3799 34.068L48.0118 30.436L60.3798 42.844L67.5798 35.6L48.0118 15.9999L28.3799 35.6L35.5799 42.844Z" fill="white"/>
-                                                <path d="M40.792 47.988L48.0215 40.7585L55.2509 47.988L48.0215 55.2175L40.792 47.988Z" fill="white"/>
-                                                <path d="M60.3798 53.1721L48.0079 65.5441L43.6638 61.2001L42.8639 60.4001L35.5799 53.1721L28.3799 60.3721L48.0118 79.972L67.5798 60.3721L60.3798 53.1721Z" fill="white"/>
-                                                <path d="M16 48.008L23.2295 40.7786L30.4589 48.008L23.2295 55.2375L16 48.008Z" fill="white"/>
-                                                <path d="M65.5439 48.004L72.7735 40.7745L80.0029 48.004L72.7735 55.2335L65.5439 48.004Z" fill="white"/>
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_1_128" x1="75.6965" y1="108.719" x2="2.72709" y2="-14.8494" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#E9B204"/>
-                                                <stop offset="1" stop-color="#F0B90B"/>
-                                            </linearGradient>
-                                            <clipPath id="clip0_1_128">
-                                                <rect width="96" height="96" fill="white"/>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
+                                <img src="/assets/images/crypto-payments/bnb.png" alt="bnb" loading="lazy">
                                 <div class="cryptocurrencies__item-name">BNB</div>
                             </div>
                         </div>
@@ -561,7 +426,7 @@
 
                     <div class="info__item send-coins">
                         <div class="send-coins__up">
-                            <img src="/assets/images/send-coins-phone.png" alt="phone">
+                            <img src="/assets/images/send-coins-phone.png" alt="phone" loading="lazy">
                         </div>
                         <div class="info__item-down">
                             <h3>Send coins to users</h3>
@@ -641,7 +506,7 @@
                         </div>
                         <div class="quick-start__step second-step">
                             <div class="quick-start__step-example">
-                                <div class="quick-start__step-request">
+                                <div class="code">
                                     asset<span class="blue">=</span><span class="yellow">TON</span><span class="red">&</span>amount<span class="blue">=</span><span class="yellow">2.75</span>
                                     <br>
                                     {"asset":<span class="blue">"TON"</span>, "amount": <span class="blue">"2.75"</span>}
@@ -670,7 +535,7 @@
                                 </ul>
                             </div>
                             <div class="quick-start__step-example">
-                                <div class="quick-start__step-request">
+                                <div class="code">
                                     <span class="light-blue">Invoice</span>(
                                     <div class="tabulation">
                                         <div><span class="light-blue">payload:</span>“item:monthly_premium”,</div>
@@ -706,23 +571,23 @@
                         </p>
                         <div class="dev-community__items dev-community__items_my-16">
                             <div class="dev-community__item">
-                                <img src="/assets/images/dev-community/js.png" alt="js">
+                                <img src="/assets/images/dev-community/js.png" alt="js" loading="lazy">
                                 <span>crypto-pay-api</span>
                             </div>
                             <div class="dev-community__item">
-                                <img src="/assets/images/dev-community/net.png" alt="net">
+                                <img src="/assets/images/dev-community/net.png" alt="net" loading="lazy">
                                 <span>CryptoPay</span>
                             </div>
                             <div class="dev-community__item">
-                                <img src="/assets/images/dev-community/php.png" alt="php">
+                                <img src="/assets/images/dev-community/php.png" alt="php" loading="lazy">
                                 <span>crypto-pay-api</span>
                             </div>
                             <div class="dev-community__item">
-                                <img src="/assets/images/dev-community/python.png" alt="python">
+                                <img src="/assets/images/dev-community/python.png" alt="python" loading="lazy">
                                 <span>aiocryptopay</span>
                             </div>
                             <div class="dev-community__item">
-                                <img src="/assets/images/dev-community/go.png" alt="go">
+                                <img src="/assets/images/dev-community/go.png" alt="go" loading="lazy">
                                 <span>cryptobot-sdk-golang</span>
                             </div>
                         </div>
@@ -751,5 +616,7 @@
         </div>
     </footer>
 </div>
+
+<script src="index.js"></script>
 </body>
 </html>
