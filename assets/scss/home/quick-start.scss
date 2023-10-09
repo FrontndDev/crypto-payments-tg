@@ -1,0 +1,81 @@
+@import "../style";
+
+.quick-start {
+  margin-top: 144px;
+  padding: 120px 0;
+  background: $bg-light;
+
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &_mt-40 {
+      margin-top: 40px;
+    }
+  }
+
+  &__step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.first-step {
+      & .quick-start__step-example {
+        flex-direction: column;
+        row-gap: 4px;
+        padding: 117px 99px;
+        background: $bg-purple;
+      }
+    }
+
+    &.second-step {
+      & .quick-start__step-example {
+        justify-content: center;
+        align-items: center;
+        padding: 0 98px;
+        background: $bg-yellow;
+      }
+    }
+
+    &.third-step {
+      & .quick-start__step-example {
+        justify-content: center;
+        align-items: center;
+        padding: 0 93px;
+        background: $bg-blue;
+      }
+    }
+
+    &-manual {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 488px;
+    }
+
+    &-example {
+      display: flex;
+      width: 590px;
+      height: 488px;
+      border-radius: 40px;
+    }
+
+    &-num {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: $black-linear;
+      box-shadow: $dark-box-shadow;
+      color: $white;
+    }
+  }
+}

@@ -5,17 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f437457-1ada-411d-b19d-e1ae456a92ca" name="Changes" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/footer.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/header.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/anonymous-payments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/anonymous-payments.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/bots.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/bots.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/code.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/crypto-pay-api.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/crypto-pay-api.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/crypto-payments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/crypto-payments.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/cryptocurrencies.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/cryptocurrencies.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/dev-community.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/dev-community.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/exchange-rates.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/exchange-rates.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/info.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/message.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/payment-statistics.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/payment-statistics.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/quick-start.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/quick-start.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/send-coins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/send-coins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/slider.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/start-crypto-bot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/start-crypto-bot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/home/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/send-coins/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/send-coins/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/send-coins/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/send-coins/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/send-coins/send-coins-phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/anonymous-payments.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/bots.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/crypto-pay-api.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/crypto-payments.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/cryptocurrencies.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/dev-community.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/exchange-rates.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/info.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/message.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/payment-statistics.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/quick-start.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/send-coins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/home/start-crypto-bot.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_10_2023_17_03_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_10_2023_17_03__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/send-coins-phone.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,21 +96,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/egorb/WebstormProjects/crypto-payments-tg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.JavaScript&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/egorb/WebstormProjects/crypto-payments-tg",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Settings.JavaScript",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\egorb\WebstormProjects\crypto-payments\assets\scss" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +131,9 @@
       <workItem from="1696455362904" duration="185000" />
       <workItem from="1696494079080" duration="11390000" />
       <workItem from="1696511429286" duration="88000" />
-      <workItem from="1696511602153" duration="6502000" />
+      <workItem from="1696511602153" duration="6551000" />
+      <workItem from="1696697605850" duration="12668000" />
+      <workItem from="1696722707011" duration="46612000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696167504667</created>
@@ -130,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696401029584</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixes">
+      <created>1696518987867</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696518987867</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -656,5 +656,137 @@ ul li::before {
     margin: 0;
   }
 }
+.cryptocurrencies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 42px 56px;
+  border-radius: 40px;
+  grid-area: 1/1/2/13;
+}
+.cryptocurrencies__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.cryptocurrencies__list_mt-22 {
+  margin-top: 22px;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(1) > img {
+  animation-delay: 0.32s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(1) .cryptocurrencies__item-name {
+  animation-delay: 0.32s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(2) > img {
+  animation-delay: 0.64s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(2) .cryptocurrencies__item-name {
+  animation-delay: 0.64s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(3) > img {
+  animation-delay: 0.96s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(3) .cryptocurrencies__item-name {
+  animation-delay: 0.96s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(4) > img {
+  animation-delay: 1.28s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(4) .cryptocurrencies__item-name {
+  animation-delay: 1.28s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(5) > img {
+  animation-delay: 1.6s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(5) .cryptocurrencies__item-name {
+  animation-delay: 1.6s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(6) > img {
+  animation-delay: 1.92s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(6) .cryptocurrencies__item-name {
+  animation-delay: 1.92s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(7) > img {
+  animation-delay: 2.24s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(7) .cryptocurrencies__item-name {
+  animation-delay: 2.24s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(8) > img {
+  animation-delay: 2.56s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item:nth-child(8) .cryptocurrencies__item-name {
+  animation-delay: 2.56s;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item > img {
+  animation: 0.375s scaleCryptocurrencies ease-in forwards;
+}
+.cryptocurrencies__list.active .cryptocurrencies__item-name {
+  animation: 0.375s changeTextColor ease-in forwards;
+}
+.cryptocurrencies__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  flex-shrink: 0;
+}
+.cryptocurrencies__item > img {
+  width: 96px;
+  height: 96px;
+}
+.cryptocurrencies__item-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.4);
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cryptocurrencies.css.map */

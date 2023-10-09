@@ -656,5 +656,115 @@ ul li::before {
     margin: 0;
   }
 }
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px 17px;
+  width: 100%;
+  border-radius: 17.8px;
+  background: #FFFFFF;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20.25px;
+  font-weight: 400;
+  line-height: 23.8px;
+  letter-spacing: -0.6px;
+  word-break: break-word;
+  position: relative;
+}
+.message.ml-6 {
+  margin-left: 6px;
+  width: calc(100% - 6px);
+}
+.message:last-child:not(.not-last) {
+  position: relative;
+}
+.message:last-child:not(.not-last):before {
+  content: "";
+  width: 25px;
+  height: 30px;
+  background-image: url("/assets/images/messages/tail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: -6.64px;
+}
+.message > p {
+  text-align: left;
+  position: relative;
+}
+.message > p > img {
+  display: inline;
+  margin-bottom: -1px;
+  width: 20.25px;
+  height: 20.25px;
+}
+.message__time {
+  display: inline;
+  margin-top: -47px;
+  font-size: 15.5px;
+  font-weight: 510;
+  line-height: 21.4px;
+  letter-spacing: -0.6px;
+  text-align: right;
+  color: rgba(17, 17, 17, 0.4);
+}
+.message.little {
+  gap: 22px;
+  padding: 10px 15.6px;
+  border-radius: 16.78px 16.78px 7.8px 7.8px;
+}
+.message.little .message__time {
+  margin-top: -40px;
+  font-size: 14.5px;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+.message.little, .message.little p {
+  font-size: 19px;
+  letter-spacing: -0.56px;
+  line-height: 22.37px;
+}
+.message.little > img, .message.little p > img {
+  margin-bottom: -2px;
+  width: 18px;
+  height: 18px;
+}
+.message.little strong, .message.little p strong {
+  font-weight: 590;
+}
+.message.so-little {
+  gap: 21px;
+  padding: 10px 15px;
+}
+.message.so-little .message__time {
+  margin-top: -40px;
+  font-size: 13.889px;
+  line-height: 19.2px;
+  letter-spacing: -0.5px;
+}
+.message.so-little, .message.so-little p {
+  font-size: 18px;
+  line-height: 21.3px;
+  letter-spacing: -0.5px;
+}
+.message.so-little > img, .message.so-little p > img {
+  margin-bottom: -2px;
+  width: 18px;
+  height: 18px;
+}
+.message.so-little strong, .message.so-little p strong {
+  font-weight: 700;
+}
+.message.text-black, .message.text-black p {
+  color: #000000;
+}
+.message.text-black strong, .message.text-black p strong {
+  color: #000000;
+}
+.message.flat-bottom {
+  border-radius: 17.8px 17.8px 8.3px 8.3px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=message.css.map */

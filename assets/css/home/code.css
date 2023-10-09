@@ -656,5 +656,39 @@ ul li::before {
     margin: 0;
   }
 }
+.code {
+  padding: 16.6px;
+  width: 100%;
+  border-radius: 20px;
+  background: #0D0D12;
+  font-family: "SF Mono Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.4px;
+  letter-spacing: -0.59px;
+  color: #FFFFFF;
+}
+.code .yellow {
+  color: #FCEF8F;
+}
+.code .red {
+  color: #D46565;
+}
+.code .blue {
+  color: #5DB0E2;
+}
+.code .light-blue {
+  color: #61BAEF;
+}
+.code .tabulation {
+  padding-left: 32px;
+}
+.code .tabulation > div {
+  display: flex;
+}
+.code .tabulation > div > span {
+  display: block;
+  width: 104px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=code.css.map */

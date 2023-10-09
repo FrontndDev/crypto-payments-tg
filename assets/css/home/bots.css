@@ -656,5 +656,17 @@ ul li::before {
     margin: 0;
   }
 }
+.bots {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.bots__icons {
+  display: flex;
+}
+.bots__icons > img {
+  margin-right: -32px;
+  width: 96px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=bots.css.map */

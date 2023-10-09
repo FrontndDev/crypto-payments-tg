@@ -1,0 +1,122 @@
+@import "../style";
+
+.slider {
+  margin-top: 97px;
+  background: $dark-gray;
+  width: 100%;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh + 1px);
+    overflow: hidden;
+  }
+
+  &__content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 122px;
+
+    &:not(.active) {
+      animation: hidden-slide 1s ease;
+    }
+
+    &.active {
+      display: flex;
+      animation: show-slide 1s ease;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 488px;
+    height: 488px;
+    border-radius: 40px;
+    position: relative;
+
+    & > svg {
+      margin: auto;
+      position: absolute;
+      inset: 0;
+      bottom: 31px;
+    }
+
+    &_first {
+      padding: 0 42px 0 41px;
+    }
+
+    &_second {
+      padding: 0 47px;
+    }
+
+    &_third {
+      row-gap: 14px !important;
+      padding: 0 47px;
+
+      & > .code {
+        padding: 16px 10px 16px 16px;
+        border-radius: 8.3px 8.3px 17.8px 17.8px;
+
+        & .tabulation > div > span {
+          width: 94px;
+        }
+      }
+    }
+
+    &.messages {
+      gap: 5px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 488px;
+  }
+
+  &__description {
+    color: $white;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    &-num {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      color: $white;
+    }
+
+    &-button {
+      width: 4px;
+      height: 108px;
+      border-radius: 90px;
+      background: $gray;
+
+      &:not(.active) {
+        cursor: pointer;
+      }
+
+      &.active {
+        background: $general;
+      }
+    }
+  }
+
+  &:not(:first-child) {
+    & .message.not-last {
+      border-radius: 17.8px 17.8px 8.3px 8.3px;
+    }
+  }
+}

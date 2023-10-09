@@ -1,0 +1,48 @@
+@import "../style";
+
+.send-coins {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+  padding: 0 42px 42px;
+  border-radius: 40px;
+  grid-area: 4 / 1 / 5 / 8;
+
+  &__up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-image: url("/assets/images/send-coins/send-coins-phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  &__message {
+    margin: auto;
+    max-width: 65%;
+    opacity: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    &.active {
+      animation: 1s send-coins-message ease forwards;
+    }
+
+    &-bg {
+      max-width: 59%;
+      opacity: 0;
+      top: 67px;
+
+      &.active {
+        opacity: .5;
+      }
+    }
+  }
+}

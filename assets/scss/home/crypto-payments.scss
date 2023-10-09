@@ -1,0 +1,29 @@
+@import "../style";
+
+.crypto-payments {
+  margin-top: 20px;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    margin-bottom: 95px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__phone {
+    flex-shrink: 0;
+    max-width: 488px;
+  }
+}

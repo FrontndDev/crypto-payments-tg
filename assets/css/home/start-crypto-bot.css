@@ -656,5 +656,52 @@ ul li::before {
     margin: 0;
   }
 }
+.start-crypto-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 79px 56px 42px;
+  border-radius: 40px;
+  grid-area: 2/1/3/6;
+}
+.start-crypto-bot__up {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.start-crypto-bot__create-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  padding: 18px 39px;
+  width: 223px;
+  border-radius: 17px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #0D0D12;
+  background: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+}
+.start-crypto-bot__create-btn.active {
+  animation: 1s bot-button-create ease;
+  animation-delay: 0.75s;
+}
+.start-crypto-bot__create-btn > img {
+  width: 21px;
+}
+.start-crypto-bot__arrow-btn {
+  position: absolute;
+  bottom: -45px;
+  right: -50px;
+}
+.start-crypto-bot__arrow-btn.active:not(.stop) {
+  animation: 0.5s arrow-btn-before-stop linear forwards;
+}
+.start-crypto-bot__arrow-btn.active.stop {
+  animation: 0.5s arrow-btn-after-stop linear;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=start-crypto-bot.css.map */

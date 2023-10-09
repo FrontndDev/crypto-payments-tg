@@ -1,0 +1,16 @@
+@import "../style";
+
+.bots {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__icons {
+    display: flex;
+
+    & > img {
+      margin-right: -32px;
+      width: 96px;
+    }
+  }
+}

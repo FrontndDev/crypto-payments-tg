@@ -656,5 +656,128 @@ ul li::before {
     margin: 0;
   }
 }
+.exchange-rates {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 47px 56px 42px;
+  border-radius: 32px;
+  grid-area: 3/1/4/6;
+}
+.exchange-rates__up {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: relative;
+}
+.exchange-rates__cryptocurrencies {
+  display: flex;
+  margin-left: -23px;
+  padding-left: 60px;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency {
+  animation-delay: 0.25s;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency {
+  animation-delay: 0.5s;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency {
+  animation-delay: 0.75s;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:first-child.step-1 {
+  transform: translateX(29px);
+  z-index: 2;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:first-child.step-2 {
+  transform: translateX(58px);
+  z-index: 3;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:first-child.step-2 > svg > g > path {
+  opacity: 1;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:nth-child(2).step-1 {
+  transform: translateX(29px);
+  z-index: 3;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:nth-child(2).step-1 > svg > g > path {
+  opacity: 1;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:nth-child(2).step-2 {
+  transform: translateX(-29px);
+  z-index: 1;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:last-child:not(.step-1) > svg > g > path {
+  opacity: 1;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:last-child.step-1 {
+  transform: translateX(-58px);
+  z-index: 1;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:last-child.step-2 {
+  transform: translateX(-29px);
+  z-index: 2;
+}
+.exchange-rates__cryptocurrencies .exchange-rates__cryptocurrency:last-child.step-2 > svg > g > path {
+  opacity: 0;
+}
+.exchange-rates__cryptocurrency {
+  margin: -8px -42px;
+  width: 113px;
+  height: 112px;
+  position: relative;
+  transition: 1s all ease !important;
+}
+.exchange-rates__cryptocurrency > svg > g > path {
+  transition: 1s all ease;
+}
+.exchange-rates__cryptocurrency > svg > g > path {
+  opacity: 0;
+}
+.exchange-rates__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 43px;
+  height: 25px;
+  border-radius: 19px;
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 61px;
+  right: 0;
+  z-index: 4;
+}
+.exchange-rates__button > svg {
+  position: relative;
+}
+.exchange-rates__button > svg:first-child {
+  transform: rotateZ(180deg);
+  top: 2px;
+}
+.exchange-rates__button > svg:last-child {
+  bottom: 2px;
+}
+.exchange-rates__currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+  box-shadow: 0 0 8px 0 rgba(182, 186, 191, 0.04), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+  color: #FFFFFF;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 61.6px;
+  letter-spacing: -1.7px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=exchange-rates.css.map */

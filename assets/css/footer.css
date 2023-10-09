@@ -656,5 +656,27 @@ ul li::before {
     margin: 0;
   }
 }
+.footer {
+  padding: 80px 0 40px;
+  background: #232328;
+}
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .navigation {
+  margin-left: 88px;
+}
+.footer__down {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=footer.css.map */

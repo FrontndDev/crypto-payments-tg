@@ -656,5 +656,19 @@ ul li::before {
     margin: 0;
   }
 }
+.anonymous-payments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 42px;
+  border-radius: 32px;
+  grid-area: 4/8/5/13;
+}
+.anonymous-payments__up {
+  padding: 46px 21px;
+  height: 222px;
+  border-radius: 24px;
+  background: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=anonymous-payments.css.map */

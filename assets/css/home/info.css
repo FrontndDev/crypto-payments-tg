@@ -656,5 +656,28 @@ ul li::before {
     margin: 0;
   }
 }
+.info {
+  margin-top: 144px;
+}
+.info__body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 345px 366px 366px 510px;
+  grid-gap: 20px;
+}
+.info__item {
+  background: #F7F9FB;
+}
+.info__item-down {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.info__item-down_px-14 {
+  padding: 0 14px;
+}
+.info__item-down > p {
+  color: rgba(17, 17, 17, 0.8);
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=info.css.map */

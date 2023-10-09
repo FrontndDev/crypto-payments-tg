@@ -1,0 +1,67 @@
+@import "../style";
+
+.payment-statistics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 42px 56px;
+  border-radius: 32px;
+  grid-area: 2 / 6 / 4 / 13;
+
+  &__up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+            "tg-message tg-message"
+            "tg-btn-all-time tg-btn-today"
+            "tg-btn-yesterday tg-btn-week"
+            "tg-btn-month tg-btn-month"
+            "tg-btn-back tg-btn-back";
+    grid-gap: 4.5px 4.7px;
+    padding: 46px 74px;
+    height: 526px;
+    width: 100%;
+    border-radius: 24px;
+    background-image: url("/assets/images/messages/bg-blue.png");
+    background-size: cover;
+
+    & .message {
+      grid-area: tg-message;
+      //transition: .5s all ease;
+
+      &.active {
+        animation: .5s telegram-message ease alternate;
+        animation-iteration-count: 6;
+
+        & strong[id] {
+          animation: 1s telegram-message-values linear;
+          animation-iteration-count: 3;
+        }
+      }
+    }
+
+    & #tg-btn-all-time {
+      grid-area: tg-btn-all-time;
+    }
+
+    & #tg-btn-today {
+      grid-area: tg-btn-today;
+    }
+
+    & #tg-btn-yesterday {
+      grid-area: tg-btn-yesterday;
+    }
+
+    & #tg-btn-week {
+      grid-area: tg-btn-week;
+    }
+
+    & #tg-btn-month {
+      grid-area: tg-btn-month;
+    }
+
+    & #tg-btn-back {
+      grid-area: tg-btn-back;
+    }
+  }
+}

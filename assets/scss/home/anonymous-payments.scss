@@ -1,0 +1,17 @@
+@import "../style";
+
+.anonymous-payments {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 42px;
+  border-radius: 32px;
+  grid-area: 4 / 8 / 5 / 13;
+
+  &__up {
+    padding: 46px 21px;
+    height: 222px;
+    border-radius: 24px;
+    background: $blue-linear;
+  }
+}

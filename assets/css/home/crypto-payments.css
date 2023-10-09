@@ -656,5 +656,28 @@ ul li::before {
     margin: 0;
   }
 }
+.crypto-payments {
+  margin-top: 20px;
+}
+.crypto-payments__body {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.crypto-payments__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+  margin-bottom: 95px;
+}
+.crypto-payments__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.crypto-payments__phone {
+  flex-shrink: 0;
+  max-width: 488px;
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=crypto-payments.css.map */

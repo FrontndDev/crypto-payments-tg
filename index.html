@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CryptoPay</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!--    -->
+    <link rel="stylesheet" href="assets/css/home/style.css">
+    <!--    -->
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
 </head>
 <body>
@@ -260,7 +265,14 @@
                                 Create App
                             </button>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47" fill="none">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="43"
+                                height="47"
+                                viewBox="0 0 43 47"
+                                fill="none"
+                                class="start-crypto-bot__arrow-btn"
+                            >
                                 <path d="M11.1275 3.64677C6.7178 1.12449 1.36473 4.88154 2.23774 9.88607L7.45908 39.8172C8.51449 45.8673 16.9001 46.6127 19.006 40.8435L22.4947 31.2864C22.782 30.4994 23.5293 29.9749 24.3671 29.9723L34.541 29.9403C40.6824 29.921 42.8322 21.7813 37.5012 18.7321L11.1275 3.64677Z" fill="url(#paint0_linear_1_69)" stroke="#F1F5F9" stroke-width="4"/>
                                 <defs>
                                     <linearGradient id="paint0_linear_1_69" x1="1.90306" y1="-33.3301" x2="-24.3108" y2="39.2676" gradientUnits="userSpaceOnUse">
@@ -340,7 +352,7 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <div class="exchange-rates__cryptocurrency active">
+                                <div class="exchange-rates__cryptocurrency">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="113" height="112" viewBox="0 0 113 112" fill="none">
                                         <g filter="url(#filter0_dd_1_95)">
                                             <rect x="8.42871" y="8" width="96" height="96" rx="48" fill="url(#paint0_linear_1_95)" stroke="#F1F5F9" stroke-width="4"/>
@@ -390,19 +402,19 @@
                     <div class="info__item payment-statistics">
                         <div class="payment-statistics__up">
                             <div class="message little not-last text-black">
-                                <p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
-                                <p>Volume: <strong>$6,530</strong></p>
+                                <p>Application Statistics <strong>@GoodsBot</strong> for <strong id="paymentStatistics-date">all time:</strong></p>
+                                <p>Volume: <strong id="paymentStatistics-volume">$204,920</strong></p>
                                 <p>
-                                    The number of created invoices: <strong>15,569</strong>
+                                    The number of created invoices: <strong id="paymentStatistics-invoices">16,256</strong>
                                     <br>
-                                    Number of payments: <strong>6,453</strong>
+                                    Number of payments: <strong id="paymentStatistics-payments">9,353</strong>
                                     <br>
-                                    Number of users: <strong>5,606</strong>
+                                    Number of users: <strong id="paymentStatistics-users">5,606</strong>
                                 </p>
-                                <p>Conversion: <strong>41%</strong></p>
+                                <p>Conversion: <strong id="paymentStatistics-conversion">57%</strong></p>
                                 <time class="message__time">21:30</time>
                             </div>
-                            <button class="telegram-button" id="tg-btn-all-time">· All Time ·</button>
+                            <button class="telegram-button active" id="tg-btn-all-time">· All Time ·</button>
                             <button class="telegram-button" id="tg-btn-today">Today</button>
                             <button class="telegram-button" id="tg-btn-yesterday">Yesterday</button>
                             <button class="telegram-button" id="tg-btn-week">Week</button>
@@ -426,7 +438,30 @@
 
                     <div class="info__item send-coins">
                         <div class="send-coins__up">
-                            <img src="/assets/images/send-coins-phone.png" alt="phone" loading="lazy">
+                            <img
+                                src="/assets/images/send-coins/bg.png"
+                                alt="message-bg"
+                                loading="lazy"
+                                class="send-coins__message send-coins__message-bg"
+                            >
+                            <img
+                                src="/assets/images/send-coins/1.png"
+                                alt="message-1"
+                                loading="lazy"
+                                class="send-coins__message send-coins__message_first active"
+                            >
+                            <img
+                                src="/assets/images/send-coins/2.png"
+                                alt="message-2"
+                                loading="lazy"
+                                class="send-coins__message send-coins__message_second"
+                            >
+                            <img
+                                src="/assets/images/send-coins/3.png"
+                                alt="message-3"
+                                loading="lazy"
+                                class="send-coins__message send-coins__message_third"
+                            >
                         </div>
                         <div class="info__item-down">
                             <h3>Send coins to users</h3>
@@ -454,7 +489,7 @@
                                 <time class="message__time">21:25</time>
                             </div>
                         </div>
-                        <div class="info__item-down">
+                        <div class="info__item-down info__item-down_px-14">
                             <h3>Anonymous payments</h3>
                             <p>
                                 Use allow_anonymous parameter
@@ -476,7 +511,7 @@
                     <div class="quick-start__steps quick-start__steps_mt-40">
                         <div class="quick-start__step first-step">
                             <div class="quick-start__step-manual">
-                                <span class="quick-start__step-num h3-font">1</span>
+                                <span class="quick-start__step-num h3-font white">1</span>
                                 <h3>Authorizing your app</h3>
                                 <ol>
                                     <li>Open <a href="#">@CryptoBot</a></li>
@@ -513,7 +548,7 @@
                                 </div>
                             </div>
                             <div class="quick-start__step-manual">
-                                <span class="quick-start__step-num h3-font">2</span>
+                                <span class="quick-start__step-num h3-font white">2</span>
                                 <h3>Crypto Pay API Request</h3>
                                 <p>Requests are only served over HTTPS <br> To pass parameters use:</p>
                                 <ul>
@@ -526,7 +561,7 @@
                         </div>
                         <div class="quick-start__step third-step">
                             <div class="quick-start__step-manual">
-                                <span class="quick-start__step-num h3-font">3</span>
+                                <span class="quick-start__step-num h3-font white">3</span>
                                 <h3>Getting updates</h3>
                                 <p>There are two ways of receiving <br> updates for your app:</p>
                                 <ul>

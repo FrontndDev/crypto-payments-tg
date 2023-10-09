@@ -1,0 +1,30 @@
+@import "../style";
+
+.info {
+  margin-top: 144px;
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 345px 366px 366px 510px;
+    grid-gap: 20px;
+  }
+
+  &__item {
+    background: $bg-light;
+
+    &-down {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &_px-14 {
+        padding: 0 14px;
+      }
+
+      & > p {
+        color: $dark-80;
+      }
+    }
+  }
+}
